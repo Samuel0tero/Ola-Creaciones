@@ -14,625 +14,200 @@
       background-color: #f4f4f4;
       color: #222;
     }
-
-    header {
-      background-color: #0052cc;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    header img {
-      max-width: 180px;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      margin: 10px 0;
-      font-size: 2em;
-    }
-
-    .section {
+    header, .section {
       padding: 40px 20px;
       text-align: center;
     }
-
-    .features {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
+    header {
+      background-color: #0052cc;
+      color: white;
     }
-
-    .feature {
-      width: 200px;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .feature i {
-      font-size: 30px;
-      color: #0052cc;
+    header img {
+      max-width: 150px;
       margin-bottom: 10px;
     }
-
-    .steps {
-      max-width: 600px;
-      margin: auto;
-      text-align: left;
-    }
-
-    .steps li {
-      margin: 10px 0;
-      font-weight: bold;
-    }
-
-    form {
-      max-width: 500px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
+    .btn {
       padding: 10px 20px;
-      background-color: #0052cc;
+      background-color: #25d366;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      margin-top: 20px;
     }
-
+    .features, .pricing-table, .gallery, .testimonial-carousel, .faq, .policies, .social-icons {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .features, .pricing-table, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .feature, .price-box, .gallery-item, .testimonial, .faq-item, .policy-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      flex: 1 1 200px;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .testimonial-carousel .testimonial {
+      display: none;
+      font-style: italic;
+    }
+    .testimonial.active {
+      display: block;
+    }
+    .faq-item, .policy-item {
+      text-align: left;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
     footer {
       background: #222;
       color: #fff;
       text-align: center;
       padding: 20px;
     }
-  
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.gallery-item {
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  width: 200px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05);
-}
-
-
-.testimonials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.testimonial {
-  background: #f0f0f0;
-  padding: 20px;
-  max-width: 300px;
-  border-radius: 10px;
-  font-style: italic;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.testimonial h4 {
-  margin-top: 15px;
-  font-weight: normal;
-  color: #0052cc;
-}
-
-
-.testimonial-carousel {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-}
-
-.testimonial-carousel .testimonial {
-  display: none;
-  background: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  font-style: italic;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.testimonial-carousel .testimonial.active {
-  display: block;
-  animation: fade 1s;
-}
-
-.testimonial h4 {
-  margin-top: 15px;
-  font-weight: normal;
-  color: #0052cc;
-}
-
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.faq {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-}
-
-.faq-item {
-  background: white;
-  margin-bottom: 15px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.faq-item h4 {
-  margin: 0 0 10px;
-  color: #0052cc;
-}
-
-
-.pricing-table {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.price-box {
-  background: white;
-  border: 2px solid #ccc;
-  padding: 20px;
-  width: 200px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.price-box.featured {
-  border-color: #0052cc;
-  background-color: #f0f8ff;
-}
-
-
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  color: #0052cc;
-  font-size: 32px;
-  margin: 0 15px;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-
-
-.policies {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.policies h4 {
-  margin-top: 20px;
-  color: #0052cc;
-}
-
-</style>
-
-
-  <style>
-    .lightbox-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
+    .social-icons a {
+      color: #0052cc;
+      font-size: 32px;
+      margin: 0 10px;
+      transition: transform 0.3s;
     }
-
-    .lightbox-overlay img {
-      max-width: 90%;
-      max-height: 80%;
-      border-radius: 10px;
+    .social-icons a:hover {
+      transform: scale(1.2);
     }
-
-    .lightbox-overlay.active {
-      display: flex;
-    }
-
-    .lightbox-overlay:after {
-      content: '✕';
-      position: absolute;
-      top: 30px;
-      right: 30px;
-      font-size: 30px;
-      color: white;
-      cursor: pointer;
-    }
-  
-.testimonials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.testimonial {
-  background: #f0f0f0;
-  padding: 20px;
-  max-width: 300px;
-  border-radius: 10px;
-  font-style: italic;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.testimonial h4 {
-  margin-top: 15px;
-  font-weight: normal;
-  color: #0052cc;
-}
-
-
-.testimonial-carousel {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-}
-
-.testimonial-carousel .testimonial {
-  display: none;
-  background: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  font-style: italic;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.testimonial-carousel .testimonial.active {
-  display: block;
-  animation: fade 1s;
-}
-
-.testimonial h4 {
-  margin-top: 15px;
-  font-weight: normal;
-  color: #0052cc;
-}
-
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.faq {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-}
-
-.faq-item {
-  background: white;
-  margin-bottom: 15px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.faq-item h4 {
-  margin: 0 0 10px;
-  color: #0052cc;
-}
-
-
-.pricing-table {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.price-box {
-  background: white;
-  border: 2px solid #ccc;
-  padding: 20px;
-  width: 200px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.price-box.featured {
-  border-color: #0052cc;
-  background-color: #f0f8ff;
-}
-
-
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  color: #0052cc;
-  font-size: 32px;
-  margin: 0 15px;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-
-
-.policies {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.policies h4 {
-  margin-top: 20px;
-  color: #0052cc;
-}
-
-</style>
-
+  </style>
 </head>
 <body>
 
 <header>
   <img src="Logo Ola Creaciones.png" alt="Logo Ola Creaciones" />
-  <h1>Playeras Personalizadas para Tu Negocio</h1>
-  <p>Desde $99 MXN - Calidad Premium, impresión profesional</p>
+  <h1>Playeras Personalizadas para Negocios</h1>
+  <p>Alta calidad · Impresión profesional · Entrega rápida</p>
+  <button class="btn">Solicita Cotización</button>
 </header>
 
 <section class="section">
-  <h2>¿Por qué elegirnos?</h2>
+  <h2>Beneficios</h2>
   <div class="features">
-    <div class="feature">
-      <i class="fas fa-tshirt"></i>
-      <p>100% Algodón</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-print"></i>
-      <p>Impresión profesional</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-truck"></i>
-      <p>Entrega rápida</p>
-    </div>
+    <div class="feature"><i class="fas fa-tshirt fa-2x"></i><p>100% Algodón</p></div>
+    <div class="feature"><i class="fas fa-print fa-2x"></i><p>Impresión Profesional</p></div>
+    <div class="feature"><i class="fas fa-truck fa-2x"></i><p>Entrega Rápida</p></div>
   </div>
 </section>
 
+<section class="section" style="background:#fff;">
+  <h2>Precios</h2>
+  <div class="pricing-table">
+    <div class="price-box"><h3>10 Playeras</h3><p>$120 c/u</p></div>
+    <div class="price-box"><h3>25 Playeras</h3><p>$105 c/u</p></div>
+    <div class="price-box"><h3>50+ Playeras</h3><p>$95 c/u</p></div>
+  </div>
+</section>
 
 <section class="section">
-  <h2>Modelos Disponibles</h2>
+  <h2>Modelos</h2>
   <div class="gallery">
-    <div class="gallery-item">
-      <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/t-shirt-1836074_960_720.png" alt="Modelo Básico" />
-      <p>Modelo Básico</p>
-    </div>
-    <div class="gallery-item">
-      <img src="https://cdn.pixabay.com/photo/2014/12/21/23/56/t-shirt-575832_960_720.png" alt="Modelo Color" />
-      <p>Modelo Color</p>
-    </div>
-    <div class="gallery-item">
-      <img src="https://cdn.pixabay.com/photo/2016/11/21/12/55/t-shirt-1848976_960_720.png" alt="Modelo Personalizado" />
-      <p>Modelo Personalizado</p>
-    </div>
+    <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/t-shirt-1836074_960_720.png" alt="Modelo Básico"><p>Modelo Básico</p></div>
+    <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2014/12/21/23/56/t-shirt-575832_960_720.png" alt="Modelo Color"><p>Modelo Color</p></div>
+    <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2016/11/21/12/55/t-shirt-1848976_960_720.png" alt="Modelo Personalizado"><p>Modelo Personalizado</p></div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" style="background:#fff;">
   <h2>¿Cómo funciona?</h2>
-  <ul class="steps">
-    <li>1. Elige el diseño o color de playera</li>
-    <li>2. Envíanos tu logo o idea</li>
-    <li>3. Te enviamos tu pedido en días</li>
+  <ul style="list-style:none; padding:0; max-width:600px; margin:auto;">
+    <li><strong>1.</strong> Elige el modelo</li>
+    <li><strong>2.</strong> Envíanos tu logo o idea</li>
+    <li><strong>3.</strong> Recibe tu pedido en días</li>
   </ul>
 </section>
 
-
-
-<section class="section" style="background-color:#fff;">
-  <h2>Paquetes y Precios</h2>
-  <div class="pricing-table">
-    <div class="price-box">
-      <h3>10 Playeras</h3>
-      <p>$120 c/u</p>
-      <p>Ideal para pequeños equipos</p>
-    </div>
-    <div class="price-box featured">
-      <h3>25 Playeras</h3>
-      <p>$105 c/u</p>
-      <p>Más ahorro por volumen</p>
-    </div>
-    <div class="price-box">
-      <h3>50+ Playeras</h3>
-      <p>$95 c/u</p>
-      <p>Precio especial por mayoreo</p>
-    </div>
+<section class="section">
+  <h2>Testimonios</h2>
+  <div class="testimonial-carousel">
+    <div class="testimonial active"><p>"Calidad excelente y atención rápida."</p><h4>- Ana G.</h4></div>
+    <div class="testimonial"><p>"Nos encantó el servicio y la personalización."</p><h4>- Carlos M.</h4></div>
+    <div class="testimonial"><p>"Recomendados para cualquier negocio."</p><h4>- Laura T.</h4></div>
   </div>
 </section>
 
-<section class="section" style="background-color:#fff;">
-  <h2>Lo que dicen nuestros clientes</h2>
-  <div class="testimonial-carousel">
-    <div class="testimonial active">
-      <p>"Las playeras quedaron increíbles, ¡justo como las pedimos! Excelente calidad y servicio."</p>
-      <h4>- Ana G., Boutique Local</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Muy profesionales, entregaron rápido y todo personalizado con nuestro logo. Recomendados."</p>
-      <h4>- Carlos M., Agencia de Marketing</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Excelente atención al cliente. Nos ayudaron a elegir los modelos adecuados para nuestro equipo."</p>
-      <h4>- Laura T., Restaurante Familiar</h4>
-    </div>
+<section class="section" style="background:#fff;">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq">
+    <div class="faq-item"><h4>¿Pedido mínimo?</h4><p>10 playeras</p></div>
+    <div class="faq-item"><h4>¿Tiempo de entrega?</h4><p>3–7 días hábiles</p></div>
+    <div class="faq-item"><h4>¿Puedo enviar mi logo?</h4><p>Sí, trabajamos con tu idea</p></div>
   </div>
 </section>
 
 <section class="section">
-  <h2>Solicita una cotización</h2>
-  <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+  <h2>Contacto</h2>
+  <form action="mailto:tuemail@ejemplo.com" method="post">
     <input type="text" name="nombre" placeholder="Tu nombre" required />
     <input type="email" name="correo" placeholder="Tu correo" required />
-    <textarea name="mensaje" rows="5" placeholder="Cuéntanos cuántas playeras necesitas, tallas, colores, etc."></textarea>
+    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
     <button type="submit">Enviar</button>
   </form>
 </section>
 
-
-<section class="section">
-  <h2>Preguntas Frecuentes</h2>
-  <div class="faq">
-    <div class="faq-item">
-      <h4>¿Cuántas playeras es el pedido mínimo?</h4>
-      <p>El pedido mínimo es de 10 playeras por diseño o talla.</p>
-    </div>
-    <div class="faq-item">
-      <h4>¿Cuánto tiempo tarda la entrega?</h4>
-      <p>Normalmente entre 3 y 7 días hábiles, dependiendo del volumen del pedido.</p>
-    </div>
-    <div class="faq-item">
-      <h4>¿Puedo enviar mi propio diseño o logo?</h4>
-      <p>Sí, puedes enviarnos tu logo o idea y nosotros nos encargamos del resto.</p>
-    </div>
+<!-- políticas movidas al footer -->
+  <div class="policies">
+    <div class="policy-item"><h4>Privacidad</h4><p>No compartimos tu información</p></div>
+    <div class="policy-item"><h4>Términos</h4><p>Diseños y tiempos sujetos a confirmación</p></div>
+    <div class="policy-item"><h4>Devoluciones</h4><p>Sólo por defecto de fábrica</p></div>
   </div>
 </section>
 
-
-<section class="section">
-  <h2>Síguenos en redes sociales</h2>
+<!-- redes sociales movidas al footer -->
   <div class="social-icons">
     <a href="https://www.facebook.com/Olacreacionestx" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://www.instagram.com/olacreacionestx" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
   </div>
 </section>
 
-
-<section class="section" style="background:#f9f9f9;">
-  <h2>Políticas</h2>
-  <div class="policies">
-    <h4>Política de Privacidad</h4>
-    <p>En Ola Creaciones respetamos tu privacidad. Toda la información que compartas con nosotros será utilizada exclusivamente para procesar tu pedido y mantenerte informado.</p>
-
-    <h4>Términos y Condiciones</h4>
-    <p>Los precios pueden cambiar sin previo aviso. El tiempo de entrega comienza a contar desde la confirmación del diseño y pago. Los productos personalizados no tienen devolución salvo por defectos de fábrica.</p>
-
-    <h4>Política de Devoluciones</h4>
-    <p>Solo aceptamos devoluciones por errores de producción o defectos. Revisión de calidad se realiza antes del envío.</p>
-  </div>
-</section>
 
 <footer>
-  © 2025 Ola Creaciones - Todos los derechos reservados
+  <div class="social-icons">
+    <a href="https://www.facebook.com/Olacreacionestx" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/olacreacionestx" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <div class="policies" style="margin-top: 20px;">
+    <p><strong>Política de Privacidad:</strong> No compartimos tu información.</p>
+    <p><strong>Términos:</strong> Diseños y tiempos sujetos a confirmación.</p>
+    <p><strong>Devoluciones:</strong> Sólo por defecto de fábrica.</p>
+  </div>
+  <p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
 </footer>
 
-<a href="https://wa.me/1234567890" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-
-<div class="lightbox-overlay" id="lightbox">
-  <img src="" alt="Ampliación" />
-</div>
-<script>
-  const lightbox = document.getElementById('lightbox');
-  const galleryImages = document.querySelectorAll('.gallery-item img');
-
-  galleryImages.forEach(img => {
-    img.addEventListener('click', () => {
-      lightbox.classList.add('active');
-      lightbox.querySelector('img').src = img.src;
-    });
-  });
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-  });
-</script>
 
 <script>
   const testimonials = document.querySelectorAll('.testimonial-carousel .testimonial');
   let current = 0;
-
-  function showTestimonial(index) {
-    testimonials.forEach((t, i) => {
-      t.classList.toggle('active', i === index);
-    });
-  }
-
   setInterval(() => {
+    testimonials[current].classList.remove('active');
     current = (current + 1) % testimonials.length;
-    showTestimonial(current);
+    testimonials[current].classList.add('active');
   }, 5000);
 </script>
-</body>
 
+</body>
 </html>
