@@ -82,10 +82,44 @@
   <p>Listado de preguntas y respuestas.</p>
 </section>
 
+
 <section id="contacto" class="section" style="background:#fff;">
   <h2>Contacto</h2>
-  <p>Formulario de contacto.</p>
+  <form id="contactForm">
+    <input type="text" name="nombre" placeholder="Tu nombre" required />
+    <input type="email" name="correo" placeholder="Tu correo" required />
+    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+  <p id="responseMsg" style="margin-top: 15px; font-weight: bold;"></p>
 </section>
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const responseMsg = document.getElementById('responseMsg');
+    const formData = {
+      nombre: form.nombre.value,
+      correo: form.correo.value,
+      mensaje: form.mensaje.value
+    };
+    try {
+      const res = await fetch('https://script.google.com/macros/s/AKfycbxMlb9Ti1IDy8Qz2t73u0SObTBlwve7v3uCnbbbrq6s27kSLNnF0vNIH6gOtuOroA/exec', {
+        method: 'POST',
+        body: JSON.stringify(formData)
+      });
+      if (res.ok) {
+        responseMsg.innerText = "¡Mensaje enviado correctamente!";
+        form.reset();
+      } else {
+        responseMsg.innerText = "Ocurrió un error al enviar.";
+      }
+    } catch (error) {
+      responseMsg.innerText = "Error de red. Intenta más tarde.";
+    }
+  });
+</script>
+
 
 <footer>
   <div>
