@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preguntas Frecuentes - Ola Creaciones</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #0052cc;
+      margin-bottom: 20px;
+    }
+    .faq {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+    .faq-question {
+      cursor: pointer;
+      padding: 10px;
+      font-weight: bold;
+      background: #f9f9f9;
+      border-left: 4px solid #0052cc;
+    }
+    .faq-answer {
+      display: none;
+      padding: 10px 15px;
+      color: #333;
+    }
+    .faq.open .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Preguntas Frecuentes</h1>
+
+    <div class="faq">
+      <div class="faq-question">¿Cuál es el tiempo de entrega promedio?</div>
+      <div class="faq-answer">Generalmente entre 5 y 7 días hábiles dentro de EE.UU., dependiendo del volumen y tipo de producto.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">¿Tienen cantidad mínima para hacer un pedido?</div>
+      <div class="faq-answer">Sí, el mínimo es de 10 unidades para productos personalizados.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">¿Qué tipo de archivo aceptan para el diseño o logotipo?</div>
+      <div class="faq-answer">Aceptamos archivos PNG, JPG o PDF. Recomendamos usar imágenes en alta resolución.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">¿Realizan envíos internacionales?</div>
+      <div class="faq-answer">Por el momento solo realizamos envíos dentro de Estados Unidos.</div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const faq = item.parentElement;
+        faq.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
