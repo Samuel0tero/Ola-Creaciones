@@ -2,243 +2,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ola Creaciones - Playeras para Negocios</title>
+  <title>Ola Creaciones - Playeras Personalizadas</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
-    }
-    header, .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header {
-      background-color: #0052cc;
-      color: white;
-    }
-    header img {
-      max-width: 150px;
-      margin-bottom: 10px;
-    }
-    .btn {
-      padding: 10px 20px;
-      background-color: #25d366;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    .features, .pricing-table, .gallery, .testimonial-carousel, .faq, .policies, .social-icons {
-      max-width: 1000px;
-      margin: auto;
-    }
-    .features, .pricing-table, .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .feature, .price-box, .gallery-item, .testimonial, .faq-item, .policy-item {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      flex: 1 1 200px;
-    }
-    .gallery-item img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    .testimonial-carousel .testimonial {
-      display: none;
-      font-style: italic;
-    }
-    .testimonial.active {
-      display: block;
-    }
-    .faq-item, .policy-item {
-      text-align: left;
-    }
-    form {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 500px;
-      margin: auto;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    .social-icons a {
-      color: #0052cc;
-      font-size: 32px;
-      margin: 0 10px;
-      transition: transform 0.3s;
-    }
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background: #f4f4f4; color: #222; }
+    nav { position: sticky; top: 0; background: #0052cc; padding: 10px 20px; z-index: 1000; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; }
+    header, .section { padding: 40px 20px; text-align: center; }
+    header { background: #0052cc; color: white; }
+    footer { background: #222; color: white; padding: 40px 20px; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: left; }
+    footer a { color: white; text-decoration: none; }
   </style>
 </head>
 <body>
+<nav>
+  <a href="#modelos">Modelos</a>
+  <a href="#precios">Precios</a>
+  <a href="#como-funciona">Cómo Funciona</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
+</nav>
 
 <header>
-  <img src="Logo Ola Creaciones.png" alt="Logo Ola Creaciones" />
   <h1>Playeras Personalizadas para Negocios</h1>
   <p>Alta calidad · Impresión profesional · Entrega rápida</p>
-  <button class="btn">Solicita Cotización</button>
 </header>
 
-<section class="section">
-  <h2>Beneficios</h2>
-  <div class="features">
-    <div class="feature"><i class="fas fa-tshirt fa-2x"></i><p>100% Algodón</p></div>
-    <div class="feature"><i class="fas fa-print fa-2x"></i><p>Impresión Profesional</p></div>
-    <div class="feature"><i class="fas fa-truck fa-2x"></i><p>Entrega Rápida</p></div>
-  </div>
-</section>
-
-
-<section class="section" style="background:#fff;">
-  <h2>Precios por Modelo</h2>
-  <div style="max-width:800px; margin:auto;">
-    <h3>Playera Manga Larga</h3>
-    <img src="8c10beac-170f-4340-8bc9-61972f210d78.png" alt="Playera Manga Larga" style="width:100%; max-width:600px; border-radius:10px; margin-bottom:30px;" />
-
-    <h3>Playera Cuello Redondo</h3>
-    <img src="55dd6fef-14f9-4026-a338-88570d07acdb.png" alt="Playera Cuello Redondo" style="width:100%; max-width:600px; border-radius:10px; margin-bottom:30px;" />
-
-    <h3>Playera Tipo Polo</h3>
-    <img src="5250dc22-e805-4002-9edf-dcc75876458d.png" alt="Playera Tipo Polo" style="width:100%; max-width:600px; border-radius:10px;" />
-  </div>
-</section>
-
-  <div class="pricing-table">
-    <div class="price-box"><h3>10 Playeras</h3><p>$120 c/u</p></div>
-    <div class="price-box"><h3>25 Playeras</h3><p>$105 c/u</p></div>
-    <div class="price-box"><h3>50+ Playeras</h3><p>$95 c/u</p></div>
-  </div>
-</section>
-
-<section class="section">
+<section id="modelos" class="section">
   <h2>Modelos</h2>
-  <div class="gallery">
-    <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/t-shirt-1836074_960_720.png" alt="Modelo Básico"><p>Modelo Básico</p></div>
-    <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2014/12/21/23/56/t-shirt-575832_960_720.png" alt="Modelo Color"><p>Modelo Color</p></div>
-    <div class="gallery-item"><img src="https://cdn.pixabay.com/photo/2016/11/21/12/55/t-shirt-1848976_960_720.png" alt="Modelo Personalizado"><p>Modelo Personalizado</p></div>
-  </div>
+  <p>Aquí irían las imágenes de los modelos de playeras.</p>
 </section>
 
-<section class="section" style="background:#fff;">
+<section id="precios" class="section" style="background:#fff;">
+  <h2>Precios por Modelo</h2>
+  <p>Tabla o imágenes con precios.</p>
+</section>
+
+<section id="como-funciona" class="section">
   <h2>¿Cómo funciona?</h2>
-  <ul style="list-style:none; padding:0; max-width:600px; margin:auto;">
-    <li><strong>1.</strong> Elige el modelo</li>
-    <li><strong>2.</strong> Envíanos tu logo o idea</li>
-    <li><strong>3.</strong> Recibe tu pedido en días</li>
-  </ul>
+  <p>Explicación paso a paso.</p>
 </section>
 
-<section class="section">
+<section id="testimonios" class="section" style="background:#fff;">
   <h2>Testimonios</h2>
-  <div class="testimonial-carousel">
-    <div class="testimonial active"><p>"Calidad excelente y atención rápida."</p><h4>- Ana G.</h4></div>
-    <div class="testimonial"><p>"Nos encantó el servicio y la personalización."</p><h4>- Carlos M.</h4></div>
-    <div class="testimonial"><p>"Recomendados para cualquier negocio."</p><h4>- Laura T.</h4></div>
-  </div>
+  <p>Carrusel de testimonios.</p>
 </section>
 
-<section class="section" style="background:#fff;">
+<section id="faq" class="section">
   <h2>Preguntas Frecuentes</h2>
-  <div class="faq">
-    <div class="faq-item"><h4>¿Pedido mínimo?</h4><p>10 playeras</p></div>
-    <div class="faq-item"><h4>¿Tiempo de entrega?</h4><p>3–7 días hábiles</p></div>
-    <div class="faq-item"><h4>¿Puedo enviar mi logo?</h4><p>Sí, trabajamos con tu idea</p></div>
-  </div>
+  <p>Listado de preguntas y respuestas.</p>
 </section>
 
-<section class="section">
+<section id="contacto" class="section" style="background:#fff;">
   <h2>Contacto</h2>
-  <form action="mailto:tuemail@ejemplo.com" method="post">
-    <input type="text" name="nombre" placeholder="Tu nombre" required />
-    <input type="email" name="correo" placeholder="Tu correo" required />
-    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+  <p>Formulario de contacto.</p>
 </section>
 
-<!-- políticas movidas al footer -->
-  <div class="policies">
-    <div class="policy-item"><h4>Privacidad</h4><p>No compartimos tu información</p></div>
-    <div class="policy-item"><h4>Términos</h4><p>Diseños y tiempos sujetos a confirmación</p></div>
-    <div class="policy-item"><h4>Devoluciones</h4><p>Sólo por defecto de fábrica</p></div>
-  </div>
-</section>
-
-<!-- redes sociales movidas al footer -->
-  <div class="social-icons">
-    <a href="https://www.facebook.com/Olacreacionestx" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/olacreacionestx" target="_blank"><i class="fab fa-instagram"></i></a>
-  </div>
-</section>
-
-
-
-<footer style="display: flex; flex-wrap: wrap; justify-content: space-around; background: #222; color: #fff; padding: 40px 20px; text-align: left;">
-  <div style="flex: 1 1 200px;">
+<footer>
+  <div>
     <h4>Ola Creaciones</h4>
-    <p>Playeras personalizadas para negocios con calidad premium.</p>
+    <p>Playeras personalizadas con calidad premium.</p>
   </div>
-  <div style="flex: 1 1 200px;">
+  <div>
     <h4>Redes Sociales</h4>
-    <p><a href="https://www.facebook.com/Olacreacionestx" style="color: #fff;" target="_blank">Facebook</a></p>
-    <p><a href="https://www.instagram.com/olacreacionestx" style="color: #fff;" target="_blank">Instagram</a></p>
+    <p><a href="https://www.facebook.com/Olacreacionestx" target="_blank">Facebook</a></p>
+    <p><a href="https://www.instagram.com/olacreacionestx" target="_blank">Instagram</a></p>
   </div>
-  <div style="flex: 1 1 200px;">
+  <div>
     <h4>Información Legal</h4>
-    <p><a href="politicas.html" style="color: #fff;" target="_blank">Política de Privacidad</a></p>
-    <p><a href="politicas.html" style="color: #fff;" target="_blank">Términos y Condiciones</a></p>
-    <p><a href="politicas.html" style="color: #fff;" target="_blank">Política de Devoluciones</a></p>
+    <p><a href="politicas.html" target="_blank">Política de Privacidad</a></p>
+    <p><a href="politicas.html" target="_blank">Términos y Condiciones</a></p>
+    <p><a href="politicas.html" target="_blank">Política de Devoluciones</a></p>
   </div>
 </footer>
-
-  <div class="social-icons">
-    <a href="https://www.facebook.com/Olacreacionestx" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/olacreacionestx" target="_blank"><i class="fab fa-instagram"></i></a>
-  </div>
-  <div class="policies" style="margin-top: 20px;">
-    <p><strong>Política de Privacidad:</strong> No compartimos tu información.</p>
-    <p><strong>Términos:</strong> Diseños y tiempos sujetos a confirmación.</p>
-    <p><strong>Devoluciones:</strong> Sólo por defecto de fábrica.</p>
-  </div>
-  <p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
-</footer>
-
-
-<script>
-  const testimonials = document.querySelectorAll('.testimonial-carousel .testimonial');
-  let current = 0;
-  setInterval(() => {
-    testimonials[current].classList.remove('active');
-    current = (current + 1) % testimonials.length;
-    testimonials[current].classList.add('active');
-  }, 5000);
-</script>
-
 </body>
 </html>
