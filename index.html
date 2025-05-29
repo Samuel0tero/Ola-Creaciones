@@ -93,13 +93,68 @@
   }
 </style>
 
+
+<style>
+  /* Modo oscuro automático */
+  @media (prefers-color-scheme: dark) {
+    body { background: #121212; color: #eee; }
+    nav { background: #1a1a1a; }
+    footer { background: #1a1a1a; }
+    .btn { background-color: #3399ff; color: #fff; }
+  }
+
+  /* Animaciones suaves al aparecer */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Lightbox para zoom de imágenes */
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0,0,0,0.8);
+    top: 0; left: 0; right: 0; bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 20px #fff;
+  }
+</style>
+
 </head>
 <body>
 
-<section style="background-color:#ffefc2; color:#222; padding:20px 10px; text-align:center;">
+<section class="fade-in" id="promoBanner" style="background-color:#ffefc2; color:#222; padding:20px 10px; text-align:center;">
   <h3 style="margin: 0; font-size: 1.2rem;">🎉 ¡Promoción por tiempo limitado! 🎉</h3>
-  <p style="margin: 5px 0 0;">Obtén <strong>10% de descuento</strong> en pedidos mayores a 25 playeras. Válido hasta el 30 de junio.</p>
+  <p style="margin: 5px 0 0;">
+    Obtén <strong>10% de descuento</strong> en pedidos mayores a 25 playeras. 
+    <span id="promoTime">Quedan 31 días</span>.
+  </p>
 </section>
+<script>
+  const end = new Date("2025-06-30");
+  const promoTime = document.getElementById("promoTime");
+  const promoBanner = document.getElementById("promoBanner");
+  const now = new Date();
+  const diff = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
+  if (diff > 0) {
+    promoTime.innerText = "Quedan " + diff + " días";
+  } else {
+    promoBanner.style.display = "none";
+  }
+</script>
 
 <nav>
   <a href="#modelos">Modelos</a>
@@ -115,33 +170,33 @@
   <p>Alta calidad · Impresión profesional · Entrega rápida</p>
 </header>
 
-<section id="modelos" class="section">
+<section class="fade-in" id="modelos" class="section">
   <h2>Modelos</h2>
   <p>Aquí irían las imágenes de los modelos de playeras.</p>
 </section>
 
-<section id="precios" class="section" style="background:#fff;">
+<section class="fade-in" id="precios" class="section" style="background:#fff;">
   <h2>Precios por Modelo</h2>
   <p>Tabla o imágenes con precios.</p>
 </section>
 
-<section id="como-funciona" class="section">
+<section class="fade-in" id="como-funciona" class="section">
   <h2>¿Cómo funciona?</h2>
   <p>Explicación paso a paso.</p>
 </section>
 
-<section id="testimonios" class="section" style="background:#fff;">
+<section class="fade-in" id="testimonios" class="section" style="background:#fff;">
   <h2>Testimonios</h2>
   <p>Carrusel de testimonios.</p>
 </section>
 
-<section id="faq" class="section">
+<section class="fade-in" id="faq" class="section">
   <h2>Preguntas Frecuentes</h2>
   <p>Listado de preguntas y respuestas.</p>
 </section>
 
 
-<section id="contacto" class="section" style="background:#fff;">
+<section class="fade-in" id="contacto" class="section" style="background:#fff;">
   <h2>Contacto</h2>
   <form id="contactForm">
     <input type="text" name="nombre" placeholder="Tu nombre" required />
@@ -165,7 +220,7 @@
       mensaje: form.mensaje.value
     };
     try {
-      const res = await fetch('https://script.google.com/macros/s/AKfycbxMlb9Ti1IDy8Qz2t73u0SObTBlwve7v3uCnbbbrq6s27kSLNnF0vNIH6gOtuOroA/exec', {
+      const res = await fetch('https://script.google.com/macros/s/AKfycbzsxKnYzJB4Rn-ACRaMGhIGn4m7jCo34ZvTDhq3HtU2WzyApmiq4XNNp5kelZP2kw/exec', {
         method: 'POST',
         body: JSON.stringify(formData)
       });
@@ -239,6 +294,32 @@
 ">
   💬 WhatsApp
 </a>
+
+
+<script>
+  // Animaciones al hacer scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Lightbox para imágenes
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.innerHTML = '<img src="" />';
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', () => overlay.style.display = 'none');
+
+  document.querySelectorAll('img.zoom').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      overlay.querySelector('img').src = img.src;
+      overlay.style.display = 'flex';
+    });
+  });
+</script>
 
 </body>
 </html>
