@@ -51,6 +51,61 @@
   </style>
 </head>
 <body>
+
+<header style="position: fixed; top: 0; width: 100%; background: #fff; border-bottom: 1px solid #ccc; z-index: 1000;">
+  <nav style="max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+    <div style="font-weight: bold; color: #0052cc;">Ola Creaciones</div>
+    <div class="menu-toggle" onclick="toggleMenu()" style="display: none; font-size: 1.5rem; cursor: pointer;">☰</div>
+    <ul id="navMenu" style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+      <li><a href="index.html" style="text-decoration: none; color: #333;">Inicio</a></li>
+      <li><a href="productos.html" style="text-decoration: none; color: #333;">Productos</a></li>
+      <li><a href="testimonios.html" style="text-decoration: none; color: #333;">Testimonios</a></li>
+      <li><a href="faq.html" style="text-decoration: none; color: #333;">FAQ</a></li>
+      <li><a href="como-funciona.html" style="text-decoration: none; color: #333;">Cómo Funciona</a></li>
+      <li><a href="usps.html" style="text-decoration: none; color: #333;">Cotiza Envío</a></li>
+    </ul>
+  </nav>
+</header>
+<div style="height: 70px;"></div>
+<style>
+  @media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    #navMenu {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-top: 1px solid #ccc;
+      transition: max-height 0.4s ease;
+      overflow: hidden;
+      max-height: 0;
+    }
+    #navMenu.show {
+      display: flex;
+      max-height: 500px;
+    }
+    #navMenu li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+    }
+  }
+</style>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('show');
+  }
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('navMenu');
+      nav.classList.remove('show');
+    });
+  });
+</script>
+
   <div class="container">
     <h1>Productos Personalizados</h1>
     <div class="gallery">

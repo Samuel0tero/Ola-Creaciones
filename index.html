@@ -199,40 +199,6 @@
     <span id="promoTime">Quedan 31 días</span>.
   </p>
 </section>
-const end = new Date("2025-06-30");
-  const promoTime = document.getElementById("promoTime");
-  const now = new Date();
-  const diff = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
-  if (diff &gt; 0) {{
-    promoTime.innerText = "Quedan " + diff + " días";
-  }} else {{
-    promoTime.innerText = "Promoción finalizada";
-  }}
-
-  document.querySelectorAll('#navMenu a').forEach(link =&gt; {
-    link.addEventListener('click', () =&gt; {
-      const nav = document.getElementById('navMenu');
-      nav.classList.remove('show');
-    });
-  });
-
-  const promoTime = document.getElementById("promoTime");
-  const promoBanner = document.getElementById("promoBanner");
-  const now = new Date();
-  const diff = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
-  if (diff &gt; 0) {
-    promoTime.innerText = "Quedan " + diff + " días";
-  } else {
-    promoBanner.style.display = "none";
-  }
-
-  document.querySelectorAll('#navMenu a').forEach(link =&gt; {
-    link.addEventListener('click', () =&gt; {
-      const nav = document.getElementById('navMenu');
-      nav.classList.remove('show');
-    });
-  });
-
 <nav>
 <a href="#modelos">Nuestros Productos</a>
 <a href="#precios">Precios</a>
@@ -241,12 +207,7 @@ const end = new Date("2025-06-30");
 <a href="faq.html">FAQ</a>
 <a href="#contacto">Contacto</a>
 </nav>
-<header style="background-color: #0052cc; color: white; padding: 40px 20px; text-align: center; position: relative;">
-<img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="max-width: 200px; margin-bottom: 20px;"/>
-<h1 style="font-size: 2rem; margin-bottom: 10px;">Productos Personalizados para Negocios y Eventos</h1>
-<p style="font-size: 1.2rem; margin-bottom: 30px;">Desde $99 MXN · Calidad Premium · Impresión Profesional</p>
-<a class="btn" href="#contacto">Solicita Cotización</a>
-</header>
+
 <h1>Playeras Personalizadas para Negocios</h1>
 <p>Alta calidad · Impresión profesional · Entrega rápida</p>
 
@@ -388,7 +349,7 @@ const end = new Date("2025-06-30");
     });
   });
 </script>
-</footer><script>
+</footer><script></script><script>
 const end = new Date("2025-06-30");
 const promoTime = document.getElementById("promoTime");
 const now = new Date();
