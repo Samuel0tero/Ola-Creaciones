@@ -40,6 +40,50 @@
   }
 </style>
 
+
+<style>
+  form#contactForm {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  form#contactForm input,
+  form#contactForm textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    resize: vertical;
+  }
+
+  form#contactForm textarea {
+    min-height: 120px;
+  }
+
+  #responseMsg {
+    text-align: center;
+    color: green;
+  }
+</style>
+
+
+<style>
+  #responseMsg {
+    text-align: center;
+    font-weight: bold;
+    color: #28a745;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  #responseMsg.visible {
+    opacity: 1;
+  }
+</style>
+
 </head>
 <body>
 <nav>
@@ -93,7 +137,10 @@
   </form>
   <p id="responseMsg" style="margin-top: 15px; font-weight: bold;"></p>
 </section>
+
 <script>
+  const responseMsg = document.getElementById('responseMsg');
+
   const form = document.getElementById('contactForm');
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -109,13 +156,19 @@
         body: JSON.stringify(formData)
       });
       if (res.ok) {
-        responseMsg.innerText = "¡Mensaje enviado correctamente!";
+        responseMsg.innerText = "✅ ¡Mensaje enviado correctamente!";
+        responseMsg.classList.add('visible');
+        setTimeout(() => responseMsg.classList.remove('visible'), 5000);
         form.reset();
       } else {
-        responseMsg.innerText = "Ocurrió un error al enviar.";
+        responseMsg.innerText = "❌ Ocurrió un error al enviar.";
+        responseMsg.classList.add('visible');
+        setTimeout(() => responseMsg.classList.remove('visible'), 5000);
       }
     } catch (error) {
-      responseMsg.innerText = "Error de red. Intenta más tarde.";
+      responseMsg.innerText = "⚠️ Error de red. Intenta más tarde.";
+        responseMsg.classList.add('visible');
+        setTimeout(() => responseMsg.classList.remove('visible'), 5000);
     }
   });
 </script>
