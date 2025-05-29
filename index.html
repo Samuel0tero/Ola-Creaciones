@@ -1,27 +1,26 @@
 
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <style>
+<style>
     html {
       scroll-behavior: smooth;
     }
   </style>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Playeras Personalizadas para Negocios - Ola Creaciones</title>
-<meta name="description" content="Diseñamos y producimos playeras personalizadas de alta calidad para empresas, equipos y eventos. Solicita tu cotización fácil y rápido.">
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="Playeras Personalizadas para Negocios - Ola Creaciones" />
-<meta property="og:description" content="Solicita tus playeras personalizadas con impresión profesional para tu empresa. Calidad y entrega rápida." />
-<meta property="og:image" content="https://raw.githubusercontent.com/tuusuario/tu-repo/main/Logo%20Ola%20Creaciones.png" />
-<meta property="og:url" content="https://tu-dominio.com" />
-<meta property="og:type" content="website" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Playeras Personalizadas para Negocios - Ola Creaciones</title>
+<meta content="Diseñamos y producimos playeras personalizadas de alta calidad para empresas, equipos y eventos. Solicita tu cotización fácil y rápido." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="Playeras Personalizadas para Negocios - Ola Creaciones" property="og:title">
+<meta content="Solicita tus playeras personalizadas con impresión profesional para tu empresa. Calidad y entrega rápida." property="og:description">
+<meta content="https://raw.githubusercontent.com/tuusuario/tu-repo/main/Logo%20Ola%20Creaciones.png" property="og:image"/>
+<meta content="https://tu-dominio.com" property="og:url"/>
+<meta content="website" property="og:type"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
     body { margin: 0; font-family: 'Montserrat', sans-serif; background: #f4f4f4; color: #222; }
     nav { position: sticky; top: 0; background: #0052cc; padding: 10px 20px; z-index: 1000; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; }
@@ -30,7 +29,6 @@
     footer { background: #222; color: white; padding: 40px 20px; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: left; }
     footer a { color: white; text-decoration: none; }
   </style>
-
 <style>
   .btn {
     display: inline-block;
@@ -48,8 +46,6 @@
     transform: translateY(-2px);
   }
 </style>
-
-
 <style>
   form#contactForm {
     max-width: 500px;
@@ -77,8 +73,6 @@
     color: green;
   }
 </style>
-
-
 <style>
   #responseMsg {
     text-align: center;
@@ -92,8 +86,6 @@
     opacity: 1;
   }
 </style>
-
-
 <style>
   /* Animaciones suaves al aparecer */
   .fade-in {
@@ -124,8 +116,6 @@
     box-shadow: 0 0 20px #fff;
   }
 </style>
-
-
 <style>
   .section-style {
     padding: 60px 20px;
@@ -146,13 +136,65 @@
     font-size: 1.05rem;
   }
 </style>
-</head>
-
+</link></meta></meta></head>
 <body>
+<header style="position: fixed; top: 0; width: 100%; background: #fff; border-bottom: 1px solid #ccc; z-index: 1000;">
+<nav style="max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+<div style="font-weight: bold; color: #0052cc;">Ola Creaciones</div>
+<div class="menu-toggle" onclick="toggleMenu()" style="display: none; font-size: 1.5rem; cursor: pointer;">☰</div>
+<ul id="navMenu" style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+<li><a href="index.html" style="text-decoration: none; color: #333;">Inicio</a></li>
+<li><a href="productos.html" style="text-decoration: none; color: #333;">Productos</a></li>
+<li><a href="testimonios.html" style="text-decoration: none; color: #333;">Testimonios</a></li>
+<li><a href="faq.html" style="text-decoration: none; color: #333;">FAQ</a></li>
+<li><a href="como-funciona.html" style="text-decoration: none; color: #333;">Cómo Funciona</a></li>
+<li><a href="usps.html" style="text-decoration: none; color: #333;">Cotiza Envío</a></li>
+</ul>
+</nav>
+</header>
+<div style="height: 70px;"></div>
+<style>
+  @media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    #navMenu {
+      flex-direction: column;
+      transition: max-height 0.4s ease;
+      overflow: hidden;
+      max-height: 0;
+      display: none;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-top: 1px solid #ccc;
+    }
+    #navMenu.show {
+      display: flex;
+      max-height: 500px;
+    }
+    #navMenu li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+    }
+  }
+</style>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('show');
+  }
 
-<section class="fade-in section-style" id="promoBanner" style="background-color:#fff3c4; position: sticky; top: 0; width: 100%; z-index: 999;" color:#222; padding:20px 10px; text-align:center;">
-  <h3 style="margin: 0; font-size: 1.2rem;">🎉 ¡Promoción por tiempo limitado! 🎉</h3>
-  <p style="margin: 5px 0 0;">
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('navMenu');
+      nav.classList.remove('show');
+    });
+  });
+</script>
+<section 10px;="" class="fade-in section-style" color:#222;="" id="promoBanner" padding:20px="" style="background-color:#fff3c4; position: sticky; top: 0; width: 100%; z-index: 999;" text-align:center;"="">
+<h3 style="margin: 0; font-size: 1.2rem;">🎉 ¡Promoción por tiempo limitado! 🎉</h3>
+<p style="margin: 5px 0 0;">
     Obtén <strong>10% de descuento</strong> en pedidos mayores a 25 playeras. 
     <span id="promoTime">Quedan 31 días</span>.
   </p>
@@ -161,81 +203,74 @@ const end = new Date("2025-06-30");
   const promoTime = document.getElementById("promoTime");
   const now = new Date();
   const diff = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
-  if (diff > 0) {{
+  if (diff &gt; 0) {{
     promoTime.innerText = "Quedan " + diff + " días";
   }} else {{
     promoTime.innerText = "Promoción finalizada";
   }}
-</script>
+
+  document.querySelectorAll('#navMenu a').forEach(link =&gt; {
+    link.addEventListener('click', () =&gt; {
+      const nav = document.getElementById('navMenu');
+      nav.classList.remove('show');
+    });
+  });
+
   const promoTime = document.getElementById("promoTime");
   const promoBanner = document.getElementById("promoBanner");
   const now = new Date();
   const diff = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
-  if (diff > 0) {
+  if (diff &gt; 0) {
     promoTime.innerText = "Quedan " + diff + " días";
   } else {
     promoBanner.style.display = "none";
   }
-</script>
+
+  document.querySelectorAll('#navMenu a').forEach(link =&gt; {
+    link.addEventListener('click', () =&gt; {
+      const nav = document.getElementById('navMenu');
+      nav.classList.remove('show');
+    });
+  });
 
 <nav>
-  <a href="#modelos">Nuestros Productos</a>
-  <a href="#precios">Precios</a>
-  <a href="#como-funciona">Cómo Funciona</a>
-  <a href="#testimonios">Testimonios</a>
-  <a href="#faq">FAQ</a>
-  <a href="#contacto">Contacto</a>
+<a href="#modelos">Nuestros Productos</a>
+<a href="#precios">Precios</a>
+<a href="como-funciona.html">Cómo Funciona</a>
+<a href="testimonios.html">Testimonios</a>
+<a href="faq.html">FAQ</a>
+<a href="#contacto">Contacto</a>
 </nav>
-
-
 <header style="background-color: #0052cc; color: white; padding: 40px 20px; text-align: center; position: relative;">
-  <img src="Logo Ola Creaciones.png" alt="Logo Ola Creaciones" style="max-width: 200px; margin-bottom: 20px;" />
-  <h1 style="font-size: 2rem; margin-bottom: 10px;">Productos Personalizados para Negocios y Eventos</h1>
-  <p style="font-size: 1.2rem; margin-bottom: 30px;">Desde $99 MXN · Calidad Premium · Impresión Profesional</p>
-  <a href="#contacto" class="btn">Solicita Cotización</a>
+<img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="max-width: 200px; margin-bottom: 20px;"/>
+<h1 style="font-size: 2rem; margin-bottom: 10px;">Productos Personalizados para Negocios y Eventos</h1>
+<p style="font-size: 1.2rem; margin-bottom: 30px;">Desde $99 MXN · Calidad Premium · Impresión Profesional</p>
+<a class="btn" href="#contacto">Solicita Cotización</a>
 </header>
+<h1>Playeras Personalizadas para Negocios</h1>
+<p>Alta calidad · Impresión profesional · Entrega rápida</p>
 
-  <h1>Playeras Personalizadas para Negocios</h1>
-  <p>Alta calidad · Impresión profesional · Entrega rápida</p>
-</header>
-
-<section class="fade-in section-style" id="modelos" class="section">
-  <h2>Nuestros Productos</h2>
-  <p>Explora nuestra variedad de artículos promocionales.</p>
+<section class="section" id="modelos">
+<h2>Nuestros Productos</h2>
+<p>Explora nuestra variedad de artículos promocionales.</p>
 </section>
-
-<section class="fade-in section-style" id="precios" class="section" style="background:#fff;">
-  <h2>Precios por Producto</h2>
-  <p>Consulta precios por tipo de producto.</p>
-</section>
-
-<section class="fade-in section-style" id="como-funciona" class="section">
-  <h2>¿Cómo funciona?</h2>
-  <p>Explicación paso a paso.</p>
-</section>
-
-<section class="fade-in section-style" id="testimonios" class="section" style="background:#fff;">
-  <h2>Testimonios</h2>
-  <p>Carrusel de testimonios.</p>
-</section>
-
-<section class="fade-in section-style" id="faq" class="section">
-  <h2>Preguntas Frecuentes</h2>
-  <p>Listado de preguntas y respuestas.</p>
+<section class="section" id="precios" style="background:#fff;">
+<h2>Precios por Producto</h2>
+<p>Consulta precios por tipo de producto.</p>
 </section>
 
 
-<section class="fade-in section-style" id="contacto" class="section" style="background:#fff;">
-  <h2>Contacto</h2>
-  <form id="contactForm">
-    <input type="text" name="nombre" placeholder="Tu nombre" required />
-    <input type="email" name="correo" placeholder="Tu correo" required />
-    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
-    <button type="submit" class="btn">Enviar</button>
-  </form>
-  <p id="responseMsg" style="margin-top: 15px; font-weight: bold;"></p>
-</section>
 
+<section class="section" id="contacto" style="background:#fff;">
+<h2>Contacto</h2>
+<form id="contactForm">
+<input name="nombre" placeholder="Tu nombre" required="" type="text"/>
+<input name="correo" placeholder="Tu correo" required="" type="email"/>
+<textarea name="mensaje" placeholder="Escribe tu mensaje aquí" required="" rows="5"></textarea>
+<button class="btn" type="submit">Enviar</button>
+</form>
+<p id="responseMsg" style="margin-top: 15px; font-weight: bold;"></p>
+</section>
 <script>
   const responseMsg = document.getElementById('responseMsg');
 
@@ -269,29 +304,30 @@ const end = new Date("2025-06-30");
         setTimeout(() => responseMsg.classList.remove('visible'), 5000);
     }
   });
+
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('navMenu');
+      nav.classList.remove('show');
+    });
+  });
 </script>
-
-
 <footer>
-  <div>
-    <h4>Ola Creaciones</h4>
-    <p>Artículos personalizados de calidad para impulsar tu marca.</p>
-  </div>
-  <div>
-    <h4>Redes Sociales</h4>
-    <p><a href="https://www.facebook.com/Olacreacionestx" target="_blank">Facebook</a></p>
-    <p><a href="https://www.instagram.com/olacreacionestx" target="_blank">Instagram</a></p>
-  </div>
-  <div>
-    <h4>Información Legal</h4>
-    <p><a href="politicas.html" target="_blank">Política de Privacidad</a></p>
-    <p><a href="politicas.html" target="_blank">Términos y Condiciones</a></p>
-    <p><a href="politicas.html" target="_blank">Política de Devoluciones</a></p>
-  </div>
-
-
-
-
+<div>
+<h4>Ola Creaciones</h4>
+<p>Artículos personalizados de calidad para impulsar tu marca.</p>
+</div>
+<div>
+<h4>Redes Sociales</h4>
+<p><a href="https://www.facebook.com/Olacreacionestx">Facebook</a></p>
+<p><a href="https://www.instagram.com/olacreacionestx">Instagram</a></p>
+</div>
+<div>
+<h4>Información Legal</h4>
+<p><a href="politicas.html">Política de Privacidad</a></p>
+<p><a href="politicas.html">Términos y Condiciones</a></p>
+<p><a href="politicas.html">Política de Devoluciones</a></p>
+</div>
 <a href="#contacto" style="
   position: fixed;
   bottom: 90px;
@@ -305,9 +341,7 @@ const end = new Date("2025-06-30");
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 1000;
 ">Cotiza Ahora</a>
-
-
-<a href="https://wa.me/5210000000000?text=Hola%2C%20quiero%20cotizar%20playeras%20personalizadas" target="_blank" style="
+<a href="https://wa.me/5210000000000?text=Hola%2C%20quiero%20cotizar%20playeras%20personalizadas" style="
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -323,8 +357,6 @@ const end = new Date("2025-06-30");
 ">
   💬 WhatsApp
 </a>
-
-
 <script>
   // Animaciones al hacer scroll
   const observer = new IntersectionObserver(entries => {
@@ -348,9 +380,30 @@ const end = new Date("2025-06-30");
       overlay.style.display = 'flex';
     });
   });
+
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('navMenu');
+      nav.classList.remove('show');
+    });
+  });
 </script>
+</footer><script>
+const end = new Date("2025-06-30");
+const promoTime = document.getElementById("promoTime");
+const now = new Date();
+const diff = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
+if (diff > 0) {
+  promoTime.innerText = "Quedan " + diff + " días";
+} else {
+  promoTime.innerText = "Promoción finalizada";
+}
 
-</body>
+document.querySelectorAll('#navMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById('navMenu');
+    nav.classList.remove('show');
+  });
+});
+</script></body>
 </html>
-
-</footer>
