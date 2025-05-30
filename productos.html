@@ -70,8 +70,26 @@
       text-decoration: none;
       font-weight: bold;
     }
+    
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .product {
+      transition: all 0.3s ease;
+    }
+    [data-sr] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .sr-show {
+      opacity: 1 !important;
+      transform: none !important;
+    }
     </style>
-</head>
+<meta content="Explora nuestros productos personalizados: playeras, termos, gorras, empaques y más con impresión profesional." name="description"/><meta content="ropa personalizada, productos promocionales, impresión, gorras, playeras, termos, etiquetas" name="keywords"/></head>
 <body>
 <header style="background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc;">
 <img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="height: 80px;"/>
@@ -88,7 +106,7 @@
 <section class="hero">
 <h1>Productos</h1>
 </section>
-<main class="section"><h2>🎽 Ropa Personalizada</h2><div class="products-grid"><div class="product">
+<main class="section"><h2>🎽 Ropa Personalizada</h2><div class="products-grid"><div class="product" data-sr="true">
 <img alt="Playera personalizada" src="playera.png"/>
 <div class="info">
 <h3>📝 Playera Personalizada</h3>
@@ -97,7 +115,7 @@
 <p>🎨 Colores: Blanco, Negro, Azul, Rojo</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Sudadera personalizada" src="sudadera.png"/>
 <div class="info">
 <h3>📝 Sudadera / Hoodie</h3>
@@ -106,7 +124,7 @@
 <p>🎨 Colores: Gris, Negro, Azul Marino</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Gorra personalizada" src="gorra.png"/>
 <div class="info">
 <h3>📝 Gorra Personalizada</h3>
@@ -115,7 +133,7 @@
 <p>🎨 Colores: Negro, Blanco, Rojo</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Mandil personalizado" src="mandil.png"/>
 <div class="info">
 <h3>📝 Mandil Personalizado</h3>
@@ -124,7 +142,7 @@
 <p>🎨 Colores: Negro, Azul Marino</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div></div><h2>☕ Artículos Promocionales</h2><div class="products-grid"><div class="product">
+</div></div><h2>☕ Artículos Promocionales</h2><div class="products-grid"><div class="product" data-sr="true">
 <img alt="Termo personalizado" src="termo.png"/>
 <div class="info">
 <h3>📝 Termo / Botella</h3>
@@ -133,7 +151,7 @@
 <p>🎨 Colores: Blanco, Azul, Plateado</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Taza personalizada" src="taza.png"/>
 <div class="info">
 <h3>📝 Taza Personalizada</h3>
@@ -142,7 +160,7 @@
 <p>🎨 Colores: Blanco</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Llavero personalizado" src="llavero.png"/>
 <div class="info">
 <h3>📝 Llavero Promocional</h3>
@@ -151,7 +169,7 @@
 <p>🎨 Colores: Varios</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="USB personalizado" src="usb.png"/>
 <div class="info">
 <h3>📝 USB Personalizado</h3>
@@ -160,7 +178,7 @@
 <p>🎨 Colores: Plateado, Azul, Negro</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div></div><h2>🧩 Papelería y Publicidad</h2><div class="products-grid"><div class="product">
+</div></div><h2>🧩 Papelería y Publicidad</h2><div class="products-grid"><div class="product" data-sr="true">
 <img alt="Stickers personalizados" src="sticker.png"/>
 <div class="info">
 <h3>📝 Stickers Personalizados</h3>
@@ -169,7 +187,7 @@
 <p>🎨 Colores: Full color</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Tarjeta de presentación" src="tarjeta.png"/>
 <div class="info">
 <h3>📝 Tarjetas de Presentación</h3>
@@ -178,7 +196,7 @@
 <p>🎨 Colores: Frente y reverso full color</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Volantes publicitarios" src="volante.png"/>
 <div class="info">
 <h3>📝 Volantes Publicitarios</h3>
@@ -187,7 +205,7 @@
 <p>🎨 Colores: Full color</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Etiquetas personalizadas" src="etiqueta.png"/>
 <div class="info">
 <h3>📝 Etiquetas Personalizadas</h3>
@@ -196,7 +214,7 @@
 <p>🎨 Colores: Full color</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div></div><h2>🎉 Regalos y Eventos Especiales</h2><div class="products-grid"><div class="product">
+</div></div><h2>🎉 Regalos y Eventos Especiales</h2><div class="products-grid"><div class="product" data-sr="true">
 <img alt="Camiseta de eventos" src="camiseta_evento.png"/>
 <div class="info">
 <h3>📝 Camisetas de Eventos</h3>
@@ -205,7 +223,7 @@
 <p>🎨 Colores: Personalizados</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Bolsa tipo tote" src="bolsa_tote.png"/>
 <div class="info">
 <h3>📝 Bolsas Tipo Tote</h3>
@@ -214,7 +232,7 @@
 <p>🎨 Colores: Blanco, Negro, Beige</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Cojín personalizado" src="cojin.png"/>
 <div class="info">
 <h3>📝 Cojines Personalizados</h3>
@@ -223,7 +241,7 @@
 <p>🎨 Colores: Varios</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Recuerdo personalizado" src="marco.png"/>
 <div class="info">
 <h3>📝 Recuerdos Personalizados</h3>
@@ -232,7 +250,7 @@
 <p>🎨 Colores: Personalizados</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div></div><h2>📦 Empaque Personalizado</h2><div class="products-grid"><div class="product">
+</div></div><h2>📦 Empaque Personalizado</h2><div class="products-grid"><div class="product" data-sr="true">
 <img alt="Caja personalizada" src="caja.png"/>
 <div class="info">
 <h3>📝 Cajas Impresas</h3>
@@ -241,7 +259,7 @@
 <p>🎨 Colores: Full color</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Bolsa con logo" src="bolsa_logo.png"/>
 <div class="info">
 <h3>📝 Bolsas con Logo</h3>
@@ -250,7 +268,7 @@
 <p>🎨 Colores: Blanco, Negro, Rojo</p>
 <a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
 </div>
-</div><div class="product">
+</div><div class="product" data-sr="true">
 <img alt="Cinta personalizada" src="cinta.png"/>
 <div class="info">
 <h3>📝 Cintas y Etiquetas de Marca</h3>
@@ -282,5 +300,19 @@
 <p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
 </div>
 </footer>
-</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll("[data-sr]");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("sr-show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  reveals.forEach(el => observer.observe(el));
+});
+</script></body>
 </html>
