@@ -21,7 +21,21 @@
     footer { background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px; }
     footer div { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left; }
     footer p, footer a { color: #eee; text-decoration: none; }
-  </style>
+  
+    .grid-categorias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 10px 0;
+    }
+    .grid-categorias li {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 15px;
+      list-style: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    </style>
 </head>
 <body>
 <header style="background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc;">
@@ -72,7 +86,6 @@
 <a class="cta" href="#contacto">Solicitar Cotización</a>
 </div>
 </div>
-
 <h2>Sudaderas y Gorras</h2>
 <div class="product">
 <img alt="Sudadera personalizada" src="sudadera.png"/>
@@ -124,7 +137,42 @@
 <a class="cta" href="#contacto">Solicitar Cotización</a>
 </div>
 </div>
-</main>
+<div class="section">
+<h2>🎽 Ropa Personalizada</h2>
+<ul class="grid-categorias">
+<li>Playeras (manga corta, larga, cuello redondo, polo)</li>
+<li>Sudaderas / Hoodies</li>
+<li>Gorras / Hats</li>
+<li>Mandiles</li>
+</ul>
+<h2>☕ Artículos Promocionales</h2>
+<ul class="grid-categorias">
+<li>Termos y botellas</li>
+<li>Tazas y vasos</li>
+<li>Llaveros</li>
+<li>USB personalizados</li>
+</ul>
+<h2>🧩 Papelería y Publicidad</h2>
+<ul class="grid-categorias">
+<li>Stickers</li>
+<li>Tarjetas de presentación</li>
+<li>Volantes</li>
+<li>Etiquetas</li>
+</ul>
+<h2>🎉 Regalos y Eventos Especiales</h2>
+<ul class="grid-categorias">
+<li>Camisetas de cumpleaños / despedida de soltera</li>
+<li>Bolsas tipo tote personalizadas</li>
+<li>Cojines o almohadas</li>
+<li>Marcos o recuerdos personalizados</li>
+</ul>
+<h2>📦 Empaque Personalizado</h2>
+<ul class="grid-categorias">
+<li>Cajas impresas</li>
+<li>Bolsas con logo</li>
+<li>Cintas y etiquetas de marca</li>
+</ul>
+</div></main>
 <footer style="background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px;">
 <div style="max-width: 1200px; margin: auto;">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left;">
