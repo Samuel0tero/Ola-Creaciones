@@ -1,27 +1,22 @@
 
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<title>Productos - Ola Creaciones</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<style>
+  <meta charset="UTF-8">
+  <title>Productos - Ola Creaciones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
     .hero { background: #0052cc; color: white; text-align: center; padding: 20px 20px; }
     .hero h1 { margin: 0; font-size: 2rem; }
     .section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
-    .section h2 { color: #0052cc; font-size: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    .section h2 { color: #0052cc; font-size: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; }
     .product { background: #f5f5f5; border-radius: 8px; padding: 20px; margin: 20px 0; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
     .product img { width: 200px; max-height: 200px; object-fit: contain; }
     .info { flex: 1; }
     .info h3 { margin: 0 0 10px; }
     .info p { margin: 5px 0; }
     .cta { display: inline-block; margin-top: 10px; background: #007bff; color: white; padding: 8px 16px; border-radius: 25px; text-decoration: none; font-weight: bold; }
-    footer { background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px; }
-    footer div { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left; }
-    footer p, footer a { color: #eee; text-decoration: none; }
-  
     .grid-categorias {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -35,196 +30,116 @@
       list-style: none;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    </style>
+    footer { background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px; }
+    footer div { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left; }
+    footer p, footer a { color: #eee; text-decoration: none; }
+  </style>
 </head>
 <body>
+
 <header style="background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc;">
-<img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="height: 80px;"/>
-<nav>
-<a href="index.html" style="margin: 0 10px;">Inicio</a>
-<a href="productos.html" style="margin: 0 10px;">Productos</a>
-<a href="testimonios.html" style="margin: 0 10px;">Testimonios</a>
-<a href="faq.html" style="margin: 0 10px;">FAQ</a>
-<a href="como-funciona.html" style="margin: 0 10px;">Cómo Funciona</a>
-<a href="usps.html" style="margin: 0 10px;">Cotiza Envío</a>
-</nav>
-<a class="cta" href="#contacto">Cotiza Ahora</a>
+  <img src="Logo Ola Creaciones.png" alt="Logo Ola Creaciones" style="height: 80px;">
+  <nav>
+    <a href="index.html" style="margin: 0 10px;">Inicio</a>
+    <a href="productos.html" style="margin: 0 10px;">Productos</a>
+    <a href="testimonios.html" style="margin: 0 10px;">Testimonios</a>
+    <a href="faq.html" style="margin: 0 10px;">FAQ</a>
+    <a href="como-funciona.html" style="margin: 0 10px;">Cómo Funciona</a>
+    <a href="usps.html" style="margin: 0 10px;">Cotiza Envío</a>
+  </nav>
+  <a href="#contacto" class="cta">Cotiza Ahora</a>
 </header>
+
 <section class="hero">
-<h1>Productos</h1>
+  <h1>Productos</h1>
 </section>
+
 <main class="section">
-<h2>Playeras Manga Larga</h2>
 
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
+  <h2>Categorías</h2>
+  <ul class="grid-categorias">
+    <li>🎽 Playeras (manga corta, larga, cuello redondo, polo)</li>
+    <li>🎽 Sudaderas / Hoodies</li>
+    <li>🎽 Gorras / Hats</li>
+    <li>🎽 Mandiles</li>
+    <li>☕ Termos y botellas</li>
+    <li>☕ Tazas y vasos</li>
+    <li>☕ Llaveros</li>
+    <li>☕ USB personalizados</li>
+    <li>🧩 Stickers</li>
+    <li>🧩 Tarjetas de presentación</li>
+    <li>🧩 Volantes</li>
+    <li>🧩 Etiquetas</li>
+    <li>🎉 Camisetas de cumpleaños / despedida</li>
+    <li>🎉 Bolsas tipo tote personalizadas</li>
+    <li>🎉 Cojines o almohadas</li>
+    <li>🎉 Marcos o recuerdos personalizados</li>
+    <li>📦 Cajas impresas</li>
+    <li>📦 Bolsas con logo</li>
+    <li>📦 Cintas y etiquetas de marca</li>
+  </ul>
 
-<h2>Playeras Cuello Redondo</h2>
+  <h2>Modelos Disponibles</h2>
 
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
+  <div class="product">
+    <img src="modelo1.png" alt="Playera Manga Larga">
+    <div class="info">
+      <h3>📝 Playera Manga Larga</h3>
+      <p>🧾 Precios: $18.00 Individual · $16.56 Menudeo · $15.30 Mayoreo</p>
+      <p>📏 Tallas: S a XL</p>
+      <p>🎨 Colores: Blanco, Negro, Azul</p>
+      <a href="#contacto" class="cta">🔘 Solicitar Cotización</a>
+    </div>
+  </div>
 
-<h2>Playeras Tipo Polo</h2>
+  <div class="product">
+    <img src="modelo2.png" alt="Playera Cuello Redondo">
+    <div class="info">
+      <h3>📝 Cuello Redondo 100% Algodón</h3>
+      <p>🧾 Precios: $19.55 Individual (S-XL) · $24.15 (2XL-4XL)<br>Mayoreo: $17.00 (S-XL) · $21.00 (2XL-4XL)</p>
+      <p>📏 Tallas: S a 4XL</p>
+      <p>🎨 Colores: Negro, Blanco, Gris</p>
+      <a href="#contacto" class="cta">🔘 Solicitar Cotización</a>
+    </div>
+  </div>
 
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
+  <div class="product">
+    <img src="modelo3.png" alt="Playera Tipo Polo">
+    <div class="info">
+      <h3>📝 Playera Tipo Polo</h3>
+      <p>🧾 Precios: $21.85 Individual (S-XL) · $27.60 (2XL-3XL)<br>Mayoreo: $19.00 (S-XL) · $24.00 (2XL-3XL)</p>
+      <p>📏 Tallas: S a 3XL</p>
+      <p>🎨 Colores: Azul Marino, Blanco, Gris</p>
+      <a href="#contacto" class="cta">🔘 Solicitar Cotización</a>
+    </div>
+  </div>
 
-<h2>Sudaderas y Gorras</h2>
-
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
-
-
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
-
-<h2>Artículos Promocionales</h2>
-
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
+</main>
 
 
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
-
-<h2>Eventos Especiales</h2>
-
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
-
-
-<div class="product">
-<img alt="Nombre del producto" src="ruta-de-la-imagen.png"/>
-<div class="info">
-<h3>📝 Nombre del producto</h3>
-<p>🧾 <strong>Precios:</strong> Individual: $XX.XX · Menudeo: $XX.XX · Mayoreo: $XX.XX</p>
-<p>📏 <strong>Tallas:</strong> S, M, L, XL, 2XL, 3XL</p>
-<p>🎨 <strong>Colores:</strong> Blanco, Negro, Azul, Rojo</p>
-<a class="cta" href="#contacto">🔘 Solicitar Cotización</a>
-</div>
-</div>
-
-<div class="section">
-<h2>🎽 Ropa Personalizada</h2>
-<ul class="grid-categorias">
-<li>Playeras (manga corta, larga, cuello redondo, polo)</li>
-<li>Sudaderas / Hoodies</li>
-<li>Gorras / Hats</li>
-<li>Mandiles</li>
-</ul>
-<h2>☕ Artículos Promocionales</h2>
-<ul class="grid-categorias">
-<li>Termos y botellas</li>
-<li>Tazas y vasos</li>
-<li>Llaveros</li>
-<li>USB personalizados</li>
-</ul>
-<h2>🧩 Papelería y Publicidad</h2>
-<ul class="grid-categorias">
-<li>Stickers</li>
-<li>Tarjetas de presentación</li>
-<li>Volantes</li>
-<li>Etiquetas</li>
-</ul>
-<h2>🎉 Regalos y Eventos Especiales</h2>
-<ul class="grid-categorias">
-<li>Camisetas de cumpleaños / despedida de soltera</li>
-<li>Bolsas tipo tote personalizadas</li>
-<li>Cojines o almohadas</li>
-<li>Marcos o recuerdos personalizados</li>
-</ul>
-<h2>📦 Empaque Personalizado</h2>
-<ul class="grid-categorias">
-<li>Cajas impresas</li>
-<li>Bolsas con logo</li>
-<li>Cintas y etiquetas de marca</li>
-</ul>
-</div></main>
 <footer style="background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px;">
-<div style="max-width: 1200px; margin: auto;">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left;">
-<div style="flex: 1; min-width: 300px; margin: 10px;">
-<strong>Ola Creaciones</strong>
-<p>Productos personalizados con calidad premium.</p>
-</div>
-<div style="flex: 1; min-width: 300px; margin: 10px;">
-<strong>Información Legal</strong>
-<p><a href="politicas.html#privacidad" style="color: #eee;">Política de Privacidad</a></p>
-<p><a href="politicas.html#terminos" style="color: #eee;">Términos y Condiciones</a></p>
-<p><a href="politicas.html#devoluciones" style="color: #eee;">Política de Devoluciones</a></p>
-</div>
-<div style="flex: 1; min-width: 300px; margin: 10px;">
-<strong>Redes Sociales</strong>
-<p><a href="https://www.facebook.com/Olacreacionestx" style="color: #eee;" target="_blank">Facebook</a></p>
-<p><a href="https://www.instagram.com/olacreacionestx" style="color: #eee;" target="_blank">Instagram</a></p>
-</div>
-</div>
-<p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
-</div>
+  <div style="max-width: 1200px; margin: auto;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left;">
+      <div style="flex: 1; min-width: 300px; margin: 10px;">
+        <strong>Ola Creaciones</strong>
+        <p>Productos personalizados con calidad premium.</p>
+      </div>
+      <div style="flex: 1; min-width: 300px; margin: 10px;">
+        <strong>Información Legal</strong>
+        <p><a href="politicas.html#privacidad" style="color: #eee;">Política de Privacidad</a></p>
+        <p><a href="politicas.html#terminos" style="color: #eee;">Términos y Condiciones</a></p>
+        <p><a href="politicas.html#devoluciones" style="color: #eee;">Política de Devoluciones</a></p>
+      </div>
+      <div style="flex: 1; min-width: 300px; margin: 10px;">
+        <strong>Redes Sociales</strong>
+        <p><a href="https://www.facebook.com/Olacreacionestx" style="color: #eee;" target="_blank">Facebook</a></p>
+        <p><a href="https://www.instagram.com/olacreacionestx" style="color: #eee;" target="_blank">Instagram</a></p>
+      </div>
+    </div>
+    <p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
+  </div>
 </footer>
+
+
 </body>
 </html>
