@@ -1,53 +1,76 @@
 
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<title>Ola Creaciones</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="UTF-8">
+  <title>Ola Creaciones - Productos Personalizados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+    .hero { background: #0052cc; color: white; text-align: center; padding: 60px 20px; }
+    .hero h1 { margin-bottom: 10px; font-size: 2.5rem; }
+    .hero p { margin-top: 0; font-size: 1.2rem; }
+    .cta { background: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; margin-top: 20px; }
+    .section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
+    .section h2 { color: #0052cc; }
+    .products-preview { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .product-card { background: #f5f5f5; border-radius: 8px; padding: 20px; width: 250px; text-align: center; }
+    .product-card img { width: 100%; max-height: 150px; object-fit: contain; margin-bottom: 10px; }
+    .footer { background: #0052cc; color: #fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px; }
+  </style>
 </head>
 <body>
+
 <header style="background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc;">
-<img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="height: 40px;"/>
-<nav>
-<a href="index.html" style="margin: 0 10px;">Inicio</a>
-<a href="productos.html" style="margin: 0 10px;">Productos</a>
-<a href="testimonios.html" style="margin: 0 10px;">Testimonios</a>
-<a href="faq.html" style="margin: 0 10px;">FAQ</a>
-<a href="como-funciona.html" style="margin: 0 10px;">Cómo Funciona</a>
-<a href="usps.html" style="margin: 0 10px;">Cotiza Envío</a>
-</nav>
-<a href="#contacto" style="background: #007bff; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Cotiza Ahora</a>
+  <img src="Logo Ola Creaciones.png" alt="Logo Ola Creaciones" style="height: 40px;">
+  <nav>
+    <a href="index.html" style="margin: 0 10px;">Inicio</a>
+    <a href="productos.html" style="margin: 0 10px;">Productos</a>
+    <a href="testimonios.html" style="margin: 0 10px;">Testimonios</a>
+    <a href="faq.html" style="margin: 0 10px;">FAQ</a>
+    <a href="como-funciona.html" style="margin: 0 10px;">Cómo Funciona</a>
+    <a href="usps.html" style="margin: 0 10px;">Cotiza Envío</a>
+  </nav>
+  <a href="#contacto" class="cta">Cotiza Ahora</a>
 </header>
-<main style="max-width: 900px; margin: 80px auto 20px; padding: 10px; font-family: sans-serif;">
-<section style="background-color: #0052cc; color: white; text-align: center; padding: 40px 20px; font-family: 'Montserrat', sans-serif;">
-<h1 style="margin: 0; font-size: 2rem;">Inicio</h1>
+
+<section class="hero">
+  <h1>Productos Personalizados para Tu Negocio</h1>
+  <p>Alta calidad · Impresión profesional · Entrega rápida</p>
+  <a href="productos.html" class="cta">Ver Productos</a>
 </section>
 
-<p style="font-size: 1rem; margin-top: 0; margin-bottom: 0.5em;">Desde $99 MXN · Calidad Premium · Impresión Profesional</p>
-</main>
-<footer style="background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px;">
-<div style="max-width: 1000px; margin: auto;">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
-<div style="flex: 1; min-width: 200px; margin: 10px;">
-<strong>Ola Creaciones</strong>
-<p>Productos personalizados con calidad premium.</p>
-</div>
-<div style="flex: 1; min-width: 200px; margin: 10px;">
-<strong>Información Legal</strong>
-<p><a href="politicas.html#privacidad" style="color: #eee;">Política de Privacidad</a></p>
-<p><a href="politicas.html#terminos" style="color: #eee;">Términos y Condiciones</a></p>
-<p><a href="politicas.html#devoluciones" style="color: #eee;">Política de Devoluciones</a></p>
-</div>
-<div style="flex: 1; min-width: 200px; margin: 10px;">
-<strong>Redes Sociales</strong>
-<p><a href="https://www.facebook.com/Olacreacionestx" style="color: #eee;" target="_blank">Facebook</a></p>
-<p><a href="https://www.instagram.com/olacreacionestx" style="color: #eee;" target="_blank">Instagram</a></p>
-</div>
-</div>
-<p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
-</div>
+<section class="section">
+  <h2>Algunos de Nuestros Productos</h2>
+  <div class="products-preview">
+    <div class="product-card">
+      <img src="modelo1.png" alt="Playera manga larga">
+      <h3>Playera Manga Larga</h3>
+    </div>
+    <div class="product-card">
+      <img src="modelo2.png" alt="Playera cuello redondo">
+      <h3>Cuello Redondo 100% Algodón</h3>
+    </div>
+    <div class="product-card">
+      <img src="modelo3.png" alt="Playera tipo polo">
+      <h3>Playera Tipo Polo</h3>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top: 20px;"><a href="productos.html" class="cta">Ver Todos los Productos</a></p>
+</section>
+
+<section class="section">
+  <h2>Lo Que Dicen Nuestros Clientes</h2>
+  <blockquote style="text-align:center; font-style: italic; color: #333;">
+    “Las camisetas personalizadas quedaron increíbles. Excelente atención y calidad.”<br>
+    – Cliente satisfecho
+  </blockquote>
+  <p style="text-align:center;"><a href="testimonios.html" class="cta">Ver Todos los Testimonios</a></p>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Ola Creaciones - Todos los derechos reservados</p>
 </footer>
+
 </body>
 </html>
