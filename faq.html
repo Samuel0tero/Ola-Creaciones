@@ -4,172 +4,31 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
+<title>Preguntas Frecuentes</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Preguntas Frecuentes - Ola Creaciones</title>
-<style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 40px 20px;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #0052cc;
-      margin-bottom: 20px;
-    }
-    .faq {
-      margin-bottom: 15px;
-      border-bottom: 1px solid #ddd;
-    }
-    .faq-question {
-      cursor: pointer;
-      padding: 10px;
-      font-weight: bold;
-      background: #f9f9f9;
-      border-left: 4px solid #0052cc;
-    }
-    .faq-answer {
-      display: none;
-      padding: 10px 15px;
-      color: #333;
-    }
-    .faq.open .faq-answer {
-      display: block;
-    }
-  </style>
 </head>
 <body>
-
-<header style="position: fixed; top: 0; width: 100%; background: #0052cc; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-<nav style="max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px;">
-<div style="font-weight: bold; color: #fff; font-size: 1.2rem;">Ola Creaciones</div>
-<div class="menu-toggle" onclick="toggleMenu()" style="display: none; font-size: 1.5rem; color: #fff; cursor: pointer;">☰</div>
-<ul id="navMenu" style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
-<li><a href="index.html" style="text-decoration: none; color: #fff;">Inicio</a></li>
-<li><a href="productos.html" style="text-decoration: none; color: #fff;">Productos</a></li>
-<li><a href="testimonios.html" style="text-decoration: none; color: #fff;">Testimonios</a></li>
-<li><a href="faq.html" style="text-decoration: none; color: #fff;">FAQ</a></li>
-<li><a href="como-funciona.html" style="text-decoration: none; color: #fff;">Cómo Funciona</a></li>
-<li><a href="usps.html" style="text-decoration: none; color: #fff;">Cotiza Envío</a></li>
-</ul>
+<header style="background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc;">
+<img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="height: 40px;"/>
+<nav>
+<a href="index.html" style="margin: 0 10px;">Inicio</a>
+<a href="productos.html" style="margin: 0 10px;">Productos</a>
+<a href="testimonios.html" style="margin: 0 10px;">Testimonios</a>
+<a href="faq.html" style="margin: 0 10px;">FAQ</a>
+<a href="como-funciona.html" style="margin: 0 10px;">Cómo Funciona</a>
+<a href="usps.html" style="margin: 0 10px;">Cotiza Envío</a>
 </nav>
+<a href="#contacto" style="background: #007bff; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Cotiza Ahora</a>
 </header>
-<div style="height: 65px;"></div>
-<style>
-  @media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    #navMenu {
-      flex-direction: column;
-      display: none;
-      width: 100%;
-      background: #0052cc;
-      position: absolute;
-      top: 55px;
-      left: 0;
-      border-top: 1px solid #ccc;
-      transition: max-height 0.4s ease;
-      overflow: hidden;
-      max-height: 0;
-    }
-    #navMenu.show {
-      display: flex;
-      max-height: 500px;
-    }
-    #navMenu li {
-      padding: 10px 20px;
-      border-bottom: 1px solid #eee;
-    }
-  }
-</style>
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById('navMenu');
-    nav.classList.toggle('show');
-  }
-  document.querySelectorAll('#navMenu a').forEach(link => {
-    link.addEventListener('click', () => {
-      const nav = document.getElementById('navMenu');
-      nav.classList.remove('show');
-    });
-  });
-</script>
+<main style="max-width: 900px; margin: 80px auto 20px; padding: 10px; font-family: sans-serif;">
+<section style="background-color: #0052cc; color: white; text-align: center; padding: 40px 20px; font-family: 'Montserrat', sans-serif;">
+<h1 style="margin: 0; font-size: 2rem;">Faq</h1>
+</section>
 
-<div style="height: 70px;"></div>
-<style>
-  @media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    #navMenu {
-      flex-direction: column;
-      display: none;
-      width: 100%;
-      background: #fff;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      border-top: 1px solid #ccc;
-      transition: max-height 0.4s ease;
-      overflow: hidden;
-      max-height: 0;
-    }
-    #navMenu.show {
-      display: flex;
-      max-height: 500px;
-    }
-    #navMenu li {
-      padding: 10px 20px;
-      border-bottom: 1px solid #eee;
-    }
-  }
-</style>
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById('navMenu');
-    nav.classList.toggle('show');
-  }
-  document.querySelectorAll('#navMenu a').forEach(link => {
-    link.addEventListener('click', () => {
-      const nav = document.getElementById('navMenu');
-      nav.classList.remove('show');
-    });
-  });
-</script>
-<div class="container">
-<h1>Preguntas Frecuentes</h1>
-<div class="faq">
-<div class="faq-question">¿Cuál es el tiempo de entrega promedio?</div>
-<div class="faq-answer">Generalmente entre 5 y 7 días hábiles dentro de EE.UU., dependiendo del volumen y tipo de producto.</div>
-</div>
-<div class="faq">
-<div class="faq-question">¿Tienen cantidad mínima para hacer un pedido?</div>
-<div class="faq-answer">Sí, el mínimo es de 10 unidades para productos personalizados.</div>
-</div>
-<div class="faq">
-<div class="faq-question">¿Qué tipo de archivo aceptan para el diseño o logotipo?</div>
-<div class="faq-answer">Aceptamos archivos PNG, JPG o PDF. Recomendamos usar imágenes en alta resolución.</div>
-</div>
-<div class="faq">
-<div class="faq-question">¿Realizan envíos internacionales?</div>
-<div class="faq-answer">Por el momento solo realizamos envíos dentro de Estados Unidos.</div>
-</div>
-</div>
-<script>
-    document.querySelectorAll('.faq-question').forEach(item => {
-      item.addEventListener('click', () => {
-        const faq = item.parentElement;
-        faq.classList.toggle('open');
-      });
-    });
-  </script>
-<footer style="background:#222; color:#eee; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px;">
+
+<p style="font-size: 1rem; margin-top: 0; margin-bottom: 0.5em;">Contenido de ejemplo para la página Preguntas Frecuentes.</p>
+</main>
+<footer style="background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px;">
 <div style="max-width: 1000px; margin: auto;">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
 <div style="flex: 1; min-width: 200px; margin: 10px;">
@@ -178,34 +37,18 @@
 </div>
 <div style="flex: 1; min-width: 200px; margin: 10px;">
 <strong>Información Legal</strong>
-<p><a href="politicas.html#privacidad" style="color: #ddd;">Política de Privacidad</a></p>
-<p><a href="politicas.html#terminos" style="color: #ddd;">Términos y Condiciones</a></p>
-<p><a href="politicas.html#devoluciones" style="color: #ddd;">Política de Devoluciones</a></p>
+<p><a href="politicas.html#privacidad" style="color: #eee;">Política de Privacidad</a></p>
+<p><a href="politicas.html#terminos" style="color: #eee;">Términos y Condiciones</a></p>
+<p><a href="politicas.html#devoluciones" style="color: #eee;">Política de Devoluciones</a></p>
 </div>
 <div style="flex: 1; min-width: 200px; margin: 10px;">
 <strong>Redes Sociales</strong>
-<p><a href="https://www.facebook.com/Olacreacionestx" style="color: #ddd;" target="_blank">Facebook</a></p>
-<p><a href="https://www.instagram.com/olacreacionestx" style="color: #ddd;" target="_blank">Instagram</a></p>
+<p><a href="https://www.facebook.com/Olacreacionestx" style="color: #eee;" target="_blank">Facebook</a></p>
+<p><a href="https://www.instagram.com/olacreacionestx" style="color: #eee;" target="_blank">Instagram</a></p>
 </div>
 </div>
 <p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
 </div>
 </footer>
-<a href="https://wa.me/19727513601" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 25px;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  z-index: 9999;
-" target="_blank">
-  WhatsApp
-</a>
 </body>
 </html>
