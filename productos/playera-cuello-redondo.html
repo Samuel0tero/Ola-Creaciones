@@ -8,20 +8,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles.css">
   <style>
-    body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
-    .producto-detalle { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    .producto-detalle img { width: 100%; max-width: 400px; float: left; margin-right: 20px; border-radius: 6px; }
-    .producto-info { overflow: hidden; }
-    .producto-info h1 { font-size: 2rem; margin-bottom: 10px; }
-    .producto-info p { margin: 8px 0; }
-    .boton-cotizar {
-      display: inline-block; background: #007BFF; color: white; padding: 10px 20px;
-      border-radius: 4px; text-decoration: none; font-weight: bold; margin-top: 15px;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
     }
-    .boton-cotizar:hover { background: #0056b3; }
+    .producto-detalle {
+      max-width: 900px;
+      margin: 60px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .producto-detalle img {
+      width: 100%;
+      max-width: 400px;
+      float: left;
+      margin-right: 20px;
+      border-radius: 6px;
+    }
+    .producto-info {
+      overflow: hidden;
+    }
+    .producto-info h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #0052cc;
+    }
+    .producto-info p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    .boton-cotizar {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .boton-cotizar:hover {
+      background: #0056b3;
+    }
+    footer {
+      background-color: #0052cc;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
+  
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="logo.png" alt="Ola Creaciones" height="40"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li class="dropdown">
+      <a href="productos.html" class="dropbtn">Productos</a>
+      <div class="dropdown-content">
+        <a href="productos.html#ropa">Ropa Personalizada</a>
+        <a href="productos.html#promocionales">Artículos Promocionales</a>
+        <a href="productos.html#papeleria">Papelería y Publicidad</a>
+        <a href="productos.html#eventos">Regalos y Eventos</a>
+        <a href="productos.html#empaque">Empaque Personalizado</a>
+      </div>
+    </li>
+    <li><a href="testimonios.html">Testimonios</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="como-funciona.html">Cómo Funciona</a></li>
+    <li><a href="usps.html">Cotiza Envío</a></li>
+  </ul>
+</nav>
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0052cc;
+    padding: 10px 20px;
+    color: white;
+    font-family: sans-serif;
+  }
+  .navbar .logo img {
+    vertical-align: middle;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links li {
+    position: relative;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .dropdown-content a {
+    color: #0052cc;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    background-color: #f2f2f2;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
   <div class="producto-detalle">
     <img src="../images/playera-cuello-redondo.png" alt="Playera Cuello Redondo">
     <div class="producto-info">
@@ -33,5 +150,8 @@
       <a href="https://wa.me/19728496989" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
     </div>
   </div>
+  <footer>
+    &copy; 2025 Ola Creaciones - Todos los derechos reservados
+  </footer>
 </body>
 </html>
