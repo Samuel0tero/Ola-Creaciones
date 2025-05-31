@@ -1,237 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Productos - Ola Creaciones</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        section { padding: 40px; max-width: 1200px; margin: auto; }
-        h2 { color: #0052cc; }
-        .mensaje { font-size: 16px; margin-bottom: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-        .card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            background-color: #fff;
-            text-align: center;
-        }
-        .card img { width: 100%; max-height: 160px; object-fit: cover; }
-        .card h3 { margin: 10px 0; font-size: 1em; }
-        .card p { font-size: 0.9em; }
-        .card a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 12px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="utf-8"/>
+  <title>Productos - Ola Creaciones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explora nuestros productos personalizados: playeras, termos, gorras, empaques y más con impresión profesional.">
+  <meta name="keywords" content="ropa personalizada, productos promocionales, impresión, gorras, playeras, termos, etiquetas"/>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+    .hero { background: #0052cc; color: white; text-align: center; padding: 20px 20px; }
+    .hero h1 { margin: 0; font-size: 2rem; }
+    header { background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc; }
+    nav a { margin: 0 10px; text-decoration: none; color: #333; }
+    .cta { display: inline-block; background: #007bff; color: white; padding: 8px 16px; border-radius: 25px; text-decoration: none; font-weight: bold; }
+    .section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
+    .section h2 { color: #0052cc; font-size: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 40px; }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #f0f0f0;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .product .info {
+      text-align: left;
+    }
+    .product .cta, .product .details-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    footer { background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px; }
+    footer div { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left; }
+    footer p, footer a { color: #eee; text-decoration: none; }
+  </style>
 </head>
 <body>
-
-<header style="background-color: #0052cc; color: white; padding: 20px;">
-    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto;">
-        <img src="img/logo.png" alt="Ola Creaciones" style="height: 50px;">
-        <nav>
-            <a href="index.html" style="color:white; margin: 0 10px;">Inicio</a>
-            <a href="productos.html" style="color:white; margin: 0 10px;">Productos</a>
-            <a href="testimonios.html" style="color:white; margin: 0 10px;">Testimonios</a>
-            <a href="faq.html" style="color:white; margin: 0 10px;">FAQ</a>
-            <a href="contacto.html" style="color:white; margin: 0 10px;">Contacto</a>
-        </nav>
-        <a href="#cotizacion" style="background-color:white; color:#0052cc; padding:10px 15px; border-radius:5px; text-decoration:none;">Cotiza</a>
-    </div>
+<header>
+  <img src="Logo Ola Creaciones.png" alt="Logo Ola Creaciones" style="height: 80px;"/>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="testimonios.html">Testimonios</a>
+    <a href="faq.html">FAQ</a>
+    <a href="como-funciona.html">Cómo Funciona</a>
+    <a href="usps.html">Cotiza Envío</a>
+  </nav>
+  <a class="cta" href="#contacto">Cotiza Ahora</a>
 </header>
 
-<section id="ropa-personalizada">
-<h2>Ropa Personalizada</h2>
-<p class="mensaje">Explora nuestra variedad de ropa personalizada para todo tipo de eventos y promociones.</p>
-<div class="grid">
+<section class="hero"><h1>Productos</h1></section>
 
-        <div class="card">
-            <img src="img/playera-cuello-redondo.png" alt="Playera Cuello Redondo">
-            <h3>Playera Cuello Redondo</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/playera-polo.png" alt="Playera Tipo Polo">
-            <h3>Playera Tipo Polo</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/playera-manga-larga.png" alt="Playera Manga Larga">
-            <h3>Playera Manga Larga</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/sudadera.png" alt="Sudadera">
-            <h3>Sudadera</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/gorra.png" alt="Gorras">
-            <h3>Gorras</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/mandil.png" alt="Mandiles">
-            <h3>Mandiles</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        </div>
-</section>
-<section id="artículos-promocionales">
-<h2>Artículos Promocionales</h2>
-<p class="mensaje">Ideales para tu marca o negocio, estos artículos promocionales dejan una gran impresión.</p>
-<div class="grid">
-
-        <div class="card">
-            <img src="img/termo.png" alt="Termos y Botellas">
-            <h3>Termos y Botellas</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/taza.png" alt="Tazas y Vasos">
-            <h3>Tazas y Vasos</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/llavero.png" alt="Llaveros">
-            <h3>Llaveros</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/usb.png" alt="USB Personalizados">
-            <h3>USB Personalizados</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        </div>
-</section>
-<section id="papelería-y-publicidad">
-<h2>Papelería y Publicidad</h2>
-<p class="mensaje">Diseños que comunican, imprime tu marca con nuestros productos de papelería.</p>
-<div class="grid">
-
-        <div class="card">
-            <img src="img/stickers.png" alt="Stickers">
-            <h3>Stickers</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/tarjeta.png" alt="Tarjetas de Presentación">
-            <h3>Tarjetas de Presentación</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/volantes.png" alt="Volantes">
-            <h3>Volantes</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/etiquetas.png" alt="Etiquetas">
-            <h3>Etiquetas</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        </div>
-</section>
-<section id="regalos-y-eventos">
-<h2>Regalos y Eventos</h2>
-<p class="mensaje">Productos únicos para momentos únicos, personaliza tus regalos y recuerdos.</p>
-<div class="grid">
-
-        <div class="card">
-            <img src="img/camiseta-evento.png" alt="Camisetas de Cumpleaños">
-            <h3>Camisetas de Cumpleaños</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/tote.png" alt="Bolsas Tipo Tote">
-            <h3>Bolsas Tipo Tote</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/cojin.png" alt="Cojines o Almohadas">
-            <h3>Cojines o Almohadas</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/marco.png" alt="Marcos Personalizados">
-            <h3>Marcos Personalizados</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        </div>
-</section>
-<section id="empaque-personalizado">
-<h2>Empaque Personalizado</h2>
-<p class="mensaje">Eleva tu marca con empaques personalizados que marcan la diferencia.</p>
-<div class="grid">
-
-        <div class="card">
-            <img src="img/caja.png" alt="Cajas Impresas">
-            <h3>Cajas Impresas</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/bolsa-logo.png" alt="Bolsas con Logo">
-            <h3>Bolsas con Logo</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        
-        <div class="card">
-            <img src="img/cinta.png" alt="Cintas y Etiquetas de Marca">
-            <h3>Cintas y Etiquetas de Marca</h3>
-            <p>Precio individual desde $12.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-        </div>
-</section>
-
-<footer style="background-color: #0052cc; color: white; text-align: center; padding: 20px; margin-top: 40px;">
-    <p>&copy; 2025 Ola Creaciones - Todos los derechos reservados</p>
-    <div style="margin-top: 10px;">
-        <a href="https://www.facebook.com/Olacreacionestx" style="color:white; margin: 0 10px;">Facebook</a>
-        <a href="https://www.instagram.com/olacreacionestx" style="color:white; margin: 0 10px;">Instagram</a>
-        <a href="politicas.html" style="color:white; margin: 0 10px;">Políticas</a>
+<main class="section">
+  <h2>🎽 Ropa Personalizada</h2>
+  <div class="products-grid">
+    <div class="product">
+      <img src="playera.png" alt="Playera personalizada"/>
+      <div class="info">
+        <h3>📝 Playera Cuello Redondo</h3>
+        <p>🧾 Precio: $12.00 USD</p>
+        <p>📏 Tallas: S, M, L, XL, XXL</p>
+        <p>🎨 Colores: Blanco, Negro, Azul Marino</p>
+        <a class="cta" href="https://wa.me/19728496989" target="_blank">Solicitar Cotización</a>
+        <a class="details-btn" href="productos/playera-cuello-redondo.html">Ver más detalles</a>
+      </div>
     </div>
+  </div>
+</main>
+
+<footer>
+  <div>
+    <div>
+      <strong>Ola Creaciones</strong>
+      <p>Productos personalizados con calidad premium.</p>
+    </div>
+    <div>
+      <strong>Información Legal</strong>
+      <p><a href="politicas.html#privacidad">Política de Privacidad</a></p>
+      <p><a href="politicas.html#terminos">Términos y Condiciones</a></p>
+      <p><a href="politicas.html#devoluciones">Política de Devoluciones</a></p>
+    </div>
+    <div>
+      <strong>Redes Sociales</strong>
+      <p><a href="https://www.facebook.com/Olacreacionestx" target="_blank">Facebook</a></p>
+      <p><a href="https://www.instagram.com/olacreacionestx" target="_blank">Instagram</a></p>
+    </div>
+    <p style="width: 100%; text-align: center; margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
+  </div>
 </footer>
-</body></html>
+</body>
+</html>
