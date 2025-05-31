@@ -2,57 +2,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Productos Personalizados - Ola Creaciones</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos | Ola Creaciones</title>
+  <link rel="stylesheet" href="estilos.css"/>
 </head>
 <body>
-    <!-- Menú global -->
-    <header>
-        <div class="logo">Ola Creaciones</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="active"><a href="productos.html">Productos</a></li>
-                <li><a href="testimonios.html">Testimonios</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="como-funciona.html">Cómo Funciona</a></li>
-                <li><a href="usps.html">Cotiza Envío</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Menú común -->
+  <header>
+    <nav>
+      <a href="index.html"><img src="logo.png" alt="Logo Ola Creaciones" class="logo"/></a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" class="activo">Productos</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="como-funciona.html">Cómo Funciona</a></li>
+        <li><a href="usps.html">Cotiza Envío</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Productos Personalizados</h1>
-        <p>Descubre nuestra variedad de artículos únicos para tu marca o evento especial.</p>
-
-        <section class="categoria">
-            <h2>Ropa Personalizada</h2>
-            <p>Perfecta para empresas, equipos o eventos con identidad única.</p>
-            <div class="grid-productos">
-                <div class="producto" data-id="P001">
-                    <img src="images/playera-cuello-redondo.png" alt="Playera Cuello Redondo">
-                    <h3>Playera Cuello Redondo</h3>
-                    <p class="estado-stock"></p>
-                    <p class="precio">$21.00 USD</p>
-                    <a href="productos_detalle/ropa_personalizada/playera-cuello-redondo.html" class="btn-detalles">Ver más</a>
-                </div>
-                <!-- Más productos... -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-col">© 2025 Ola Creaciones</div>
-        <div class="footer-col">
-            <a href="politicas.html">Políticas</a>
+  <main>
+    <section class="categoria">
+      <h2>Ropa Personalizada</h2>
+      <p>Viste con estilo y profesionalismo: prendas ideales para negocios, eventos y uso diario.</p>
+      <div class="tarjetas-productos">
+        <div class="tarjeta">
+          <img src="img/playera-cuello-redondo.png" alt="Playera Cuello Redondo">
+          <h3>Playera Cuello Redondo</h3>
+          <p>Desde $21 USD</p>
+          <a href="productos_detalle/ropa_personalizada/playera-cuello-redondo.html" class="boton-detalles">Ver más detalles</a>
+          <a href="https://wa.me/1XXXXXXXXXX" class="boton-cotizar">Solicitar Cotización</a>
         </div>
-        <div class="footer-col">
-            <a href="https://facebook.com/Olacreacionestx">Facebook</a> |
-            <a href="https://instagram.com/olacreacionestx">Instagram</a>
-        </div>
-    </footer>
+        <!-- Aquí se agregarán más tarjetas similares por categoría -->
+      </div>
+    </section>
+  </main>
 
-    <script src="scripts/disponibilidad.js"></script>
+  <!-- Pie de página común -->
+  <footer>
+    <div class="columna">
+      <h4>Menú</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="columna">
+      <h4>Políticas</h4>
+      <ul>
+        <li><a href="politicas.html">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+    <div class="columna">
+      <h4>Síguenos</h4>
+      <a href="https://www.facebook.com/Olacreacionestx">Facebook</a> |
+      <a href="https://www.instagram.com/olacreacionestx">Instagram</a>
+    </div>
+  </footer>
 </body>
 </html>
