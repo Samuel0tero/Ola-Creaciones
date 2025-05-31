@@ -3,103 +3,196 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Productos - Ola Creaciones</title>
+    <title>Productos por Categoría - Ola Creaciones</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, footer {
-            background-color: #0052cc;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .container { max-width: 1200px; margin: auto; padding: 20px; }
-        h2 { text-align: center; margin-top: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        section { padding: 40px; }
+        h2 { color: #0052cc; }
+        .mensaje { font-size: 16px; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
         .card {
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            overflow: hidden;
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             padding: 15px;
+            background-color: #fff;
+            text-align: center;
         }
-        .card img { max-width: 100%; height: auto; }
-        .card h3 { font-size: 1.1em; margin: 10px 0; }
-        .card p { font-size: 0.9em; margin: 5px 0; }
+        .card h3 { margin: 10px 0; font-size: 1em; }
+        .card p { font-size: 0.9em; }
         .card a {
-            margin-top: auto;
-            padding: 10px 15px;
-            background-color: #007bff;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-<header>
-    <h1>Ola Creaciones</h1>
+<header style="background:#0052cc; color:white; padding:20px; text-align:center;">
+    <h1>Ola Creaciones - Productos por Categoría</h1>
 </header>
+<section id="ropa-personalizada">
+<h2>Ropa Personalizada</h2>
+<p class="mensaje">Explora nuestra variedad de ropa personalizada para todo tipo de eventos y promociones.</p>
+<div class="grid">
 
-<div class="container">
-    <h2>Nuestros Productos</h2>
-
-    <div class="grid">
         <div class="card">
-            <img src="img/playera-cuello-redondo.png" alt="Playera Cuello Redondo">
             <h3>Playera Cuello Redondo</h3>
-            <p>$12.00 USD</p>
-            <a href="playera-basica.html">Ver más</a>
-        </div>
-        <div class="card">
-            <img src="img/playera-polo.png" alt="Playera Polo">
-            <h3>Playera Polo</h3>
-            <p>$13.50 USD</p>
+            <p>Precio individual desde $12.00 USD</p>
             <a href="#">Ver más</a>
         </div>
+        
         <div class="card">
-            <img src="img/playera-manga-larga.png" alt="Playera Manga Larga">
+            <h3>Playera Tipo Polo</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
             <h3>Playera Manga Larga</h3>
-            <p>$14.00 USD</p>
+            <p>Precio individual desde $12.00 USD</p>
             <a href="#">Ver más</a>
         </div>
+        
         <div class="card">
-            <img src="img/sudadera.png" alt="Sudadera">
             <h3>Sudadera</h3>
-            <p>$18.00 USD</p>
+            <p>Precio individual desde $12.00 USD</p>
             <a href="#">Ver más</a>
         </div>
+        
         <div class="card">
-            <img src="img/gorra.png" alt="Gorra">
-            <h3>Gorra</h3>
-            <p>$8.00 USD</p>
+            <h3>Gorras</h3>
+            <p>Precio individual desde $12.00 USD</p>
             <a href="#">Ver más</a>
         </div>
+        
         <div class="card">
-            <img src="img/mandil.png" alt="Mandil">
-            <h3>Mandil</h3>
-            <p>$10.00 USD</p>
+            <h3>Mandiles</h3>
+            <p>Precio individual desde $12.00 USD</p>
             <a href="#">Ver más</a>
         </div>
-        <div class="card">
-            <img src="img/termo.png" alt="Termo">
-            <h3>Termo</h3>
-            <p>$9.00 USD</p>
-            <a href="#">Ver más</a>
         </div>
-        <div class="card">
-            <img src="img/taza.png" alt="Taza">
-            <h3>Taza</h3>
-            <p>$6.00 USD</p>
-            <a href="#">Ver más</a>
-        </div>
-    </div>
-</div>
+</section>
+<section id="artículos-promocionales">
+<h2>Artículos Promocionales</h2>
+<p class="mensaje">Ideales para tu marca o negocio, estos artículos promocionales dejan una gran impresión.</p>
+<div class="grid">
 
-<footer>
+        <div class="card">
+            <h3>Termos y Botellas</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Tazas y Vasos</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Llaveros</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>USB Personalizados</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        </div>
+</section>
+<section id="papelería-y-publicidad">
+<h2>Papelería y Publicidad</h2>
+<p class="mensaje">Diseños que comunican, imprime tu marca con nuestros productos de papelería.</p>
+<div class="grid">
+
+        <div class="card">
+            <h3>Stickers</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Tarjetas de Presentación</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Volantes</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Etiquetas</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        </div>
+</section>
+<section id="regalos-y-eventos">
+<h2>Regalos y Eventos</h2>
+<p class="mensaje">Productos únicos para momentos únicos, personaliza tus regalos y recuerdos.</p>
+<div class="grid">
+
+        <div class="card">
+            <h3>Camisetas de Cumpleaños</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Bolsas Tipo Tote</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Cojines o Almohadas</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Marcos Personalizados</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        </div>
+</section>
+<section id="empaque-personalizado">
+<h2>Empaque Personalizado</h2>
+<p class="mensaje">Eleva tu marca con empaques personalizados que marcan la diferencia.</p>
+<div class="grid">
+
+        <div class="card">
+            <h3>Cajas Impresas</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Bolsas con Logo</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        
+        <div class="card">
+            <h3>Cintas y Etiquetas de Marca</h3>
+            <p>Precio individual desde $12.00 USD</p>
+            <a href="#">Ver más</a>
+        </div>
+        </div>
+</section>
+
+<footer style="background-color: #0052cc; color: white; text-align: center; padding: 20px;">
     <p>&copy; 2025 Ola Creaciones - Todos los derechos reservados</p>
 </footer>
 </body>
