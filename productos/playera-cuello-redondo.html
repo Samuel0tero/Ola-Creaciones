@@ -1,13 +1,14 @@
 
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Playera Cuello Redondo | Ola Creaciones</title>
-  <meta name="description" content="Playera personalizada de algodón con cuello redondo. Disponible en varias tallas y colores. Ideal para promociones y eventos.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles.css">
-  <style>
+<meta charset="utf-8"/>
+<title>Playera Cuello Redondo | Ola Creaciones</title>
+<meta content="Playera personalizada de algodón con cuello redondo. Disponible en varias tallas y colores. Ideal para promociones y eventos." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../styles.css" rel="stylesheet"/>
+<style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -64,28 +65,27 @@
   </style>
 </head>
 <body>
-  
 <nav class="navbar">
-  <div class="logo">
-    <a href="index.html"><img src="logo.png" alt="Ola Creaciones" height="40"></a>
-  </div>
-  <ul class="nav-links">
-    <li><a href="index.html">Inicio</a></li>
-    <li class="dropdown">
-      <a href="productos.html" class="dropbtn">Productos</a>
-      <div class="dropdown-content">
-        <a href="productos.html#ropa">Ropa Personalizada</a>
-        <a href="productos.html#promocionales">Artículos Promocionales</a>
-        <a href="productos.html#papeleria">Papelería y Publicidad</a>
-        <a href="productos.html#eventos">Regalos y Eventos</a>
-        <a href="productos.html#empaque">Empaque Personalizado</a>
-      </div>
-    </li>
-    <li><a href="testimonios.html">Testimonios</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="como-funciona.html">Cómo Funciona</a></li>
-    <li><a href="usps.html">Cotiza Envío</a></li>
-  </ul>
+<div class="logo">
+<a href="index.html"><img alt="Ola Creaciones" height="40" src="logo.png"/></a>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Inicio</a></li>
+<li class="dropdown">
+<a class="dropbtn" href="productos.html">Productos</a>
+<div class="dropdown-content">
+<a href="productos.html#ropa">Ropa Personalizada</a>
+<a href="productos.html#promocionales">Artículos Promocionales</a>
+<a href="productos.html#papeleria">Papelería y Publicidad</a>
+<a href="productos.html#eventos">Regalos y Eventos</a>
+<a href="productos.html#empaque">Empaque Personalizado</a>
+</div>
+</li>
+<li><a href="testimonios.html">Testimonios</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="como-funciona.html">Cómo Funciona</a></li>
+<li><a href="usps.html">Cotiza Envío</a></li>
+</ul>
 </nav>
 <style>
   .navbar {
@@ -139,19 +139,90 @@
   }
 </style>
 
-  <div class="producto-detalle">
-    <img src="../images/playera-cuello-redondo.png" alt="Playera Cuello Redondo">
-    <div class="producto-info">
-      <h1>Playera Cuello Redondo</h1>
-      <p><strong>Precio individual:</strong> $12.00 USD</p>
-      <p><strong>Tallas disponibles:</strong> S, M, L, XL, XXL</p>
-      <p><strong>Colores disponibles:</strong> Blanco, Negro, Azul Marino, Rojo</p>
-      <p><strong>Descripción:</strong> Playera 100% algodón, ideal para personalizar con serigrafía o vinil textil. Cómoda, resistente y perfecta para promociones o eventos especiales.</p>
-      <a href="https://wa.me/19728496989" class="boton-cotizar" target="_blank">Solicitar Cotización</a>
-    </div>
-  </div>
-  <footer>
-    &copy; 2025 Ola Creaciones - Todos los derechos reservados
-  </footer>
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0052cc;
+    padding: 10px 20px;
+    color: white;
+    font-family: sans-serif;
+  }
+  .navbar .logo img {
+    vertical-align: middle;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links li {
+    position: relative;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .dropdown-content a {
+    color: #0052cc;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    background-color: #f2f2f2;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+<div class="producto-detalle">
+<img alt="Playera Cuello Redondo" src="../images/playera-cuello-redondo.png"/>
+<div class="producto-info">
+<h1>Playera Cuello Redondo</h1>
+<p><strong>Precio individual:</strong> $12.00 USD</p>
+<p><strong>Tallas disponibles:</strong> S, M, L, XL, XXL</p>
+<p><strong>Colores disponibles:</strong> Blanco, Negro, Azul Marino, Rojo</p>
+<p><strong>Descripción:</strong> Playera 100% algodón, ideal para personalizar con serigrafía o vinil textil. Cómoda, resistente y perfecta para promociones o eventos especiales.</p>
+<a class="boton-cotizar" href="https://wa.me/19728496989" target="_blank">Solicitar Cotización</a>
+</div>
+</div>
+
+
+<footer>
+<div style="display:flex; flex-wrap:wrap; justify-content:space-around; padding:20px; background:#0052cc; color:white;">
+<div>
+<h4>Contacto</h4>
+<p>Grand Prairie, TX</p>
+<p>Email: info@olacreaciones.com</p>
+</div>
+<div>
+<h4>Políticas</h4>
+<a href="politicas.html" style="color:white;">Política de Privacidad</a><br/>
+<a href="politicas.html#devoluciones" style="color:white;">Devoluciones</a>
+</div>
+<div>
+<h4>Síguenos</h4>
+<a href="https://www.facebook.com/Olacreacionestx" style="color:white;">Facebook</a><br/>
+<a href="https://www.instagram.com/olacreacionestx" style="color:white;">Instagram</a>
+</div>
+</div>
+<p style="text-align:center; padding:10px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
+</footer>
 </body>
 </html>
