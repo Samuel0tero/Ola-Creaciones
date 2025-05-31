@@ -1,65 +1,76 @@
 
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<title>Playera Cuello Redondo | Ola Creaciones</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header, footer { background: #0052cc; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    header img { height: 60px; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: 500; }
-    .cta { background: #007bff; padding: 8px 16px; border-radius: 25px; color: white; text-decoration: none; font-weight: bold; }
-    main { display: flex; flex-wrap: wrap; gap: 2rem; padding: 2rem; max-width: 1200px; margin: auto; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 8px; }
-    .img-producto { flex: 1; min-width: 300px; }
-    .img-producto img { width: 100%; max-height: 400px; object-fit: contain; }
-    .info-producto { flex: 2; min-width: 300px; }
-    h1 { color: #0052cc; }
-    p { font-size: 1rem; margin: 0.5rem 0; }
-    .botones a { display: inline-block; margin: 10px 10px 0 0; padding: 10px 20px; border-radius: 20px; background: #007bff; color: white; text-decoration: none; font-size: 0.9rem; }
-    footer div { width: 100%; text-align: center; margin-top: 10px; font-size: 0.85rem; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Playera Cuello Redondo - Detalles</title>
+    <link rel="stylesheet" href="../../../styles.css">
 </head>
 <body>
-<header>
-<img alt="Logo Ola Creaciones" src="../Logo Ola Creaciones.png"/>
-<nav>
-<a href="../../index.html">Inicio</a>
-<a href="../../productos.html">Productos</a>
-<a href="../../testimonios.html">Testimonios</a>
-<a href="../../faq.html">FAQ</a>
-<a href="../../como-funciona.html">Cómo Funciona</a>
-<a href="../../usps.html">Cotiza Envío</a>
-</nav>
-<a class="cta" href="#contacto">Cotiza Ahora</a>
-</header>
-<main>
-<div class="img-producto">
-<img alt="Playera Cuello Redondo" src="../img/productos/playera-cuello-redondo.png"/>
-</div>
-<div class="info-producto">
-<h1>Playera Cuello Redondo</h1>
-<p><strong>Precio individual:</strong> $12.00 USD</p>
-<p><strong>Colores disponibles:</strong> Blanco, Negro, Azul, Rojo</p>
-<p><strong>Tallas disponibles:</strong> S, M, L, XL</p>
-<p>Playera Cuello Redondo ideal para personalización con logo, texto o diseños especiales.</p>
-<div class="botones">
-<a href="https://wa.me/19728496989" target="_blank">Solicitar Cotización</a>
-<a href="../productos.html">Volver a Productos</a>
-</div>
-</div>
-</main>
-<footer>
-<div>
-<p>© 2025 Ola Creaciones - Todos los derechos reservados</p>
-<p><a href="../politicas.html#privacidad" style="color:white;">Política de Privacidad</a> | 
-       <a href="../politicas.html#terminos" style="color:white;">Términos</a> | 
-       <a href="../politicas.html#devoluciones" style="color:white;">Devoluciones</a></p>
-<p><a href="https://www.facebook.com/Olacreacionestx" style="color:white;" target="_blank">Facebook</a> | 
-       <a href="https://www.instagram.com/olacreacionestx" style="color:white;" target="_blank">Instagram</a></p>
-</div>
-</footer>
+    <header>
+        <div class="logo">Ola Creaciones</div>
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="../../../productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="detalle-producto">
+        <div class="producto-imagen">
+            <img src="../../../images/playera-cuello-redondo.png" alt="Playera Cuello Redondo">
+        </div>
+        <div class="producto-descripcion">
+            <h1>Playera Cuello Redondo</h1>
+            <p class="precio-estimada">$21.00 USD</p>
+
+            <h3>Colores Disponibles:</h3>
+            <div class="color-options">
+                <button style="background-color:red;"></button>
+                <button style="background-color:blue;"></button>
+                <button style="background-color:black;"></button>
+                <button style="background-color:green;"></button>
+            </div>
+
+            <h3>Tallas Disponibles:</h3>
+            <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+
+            <h3>Técnica:</h3>
+            <select>
+                <option>Sublimado</option>
+                <option>Vinil</option>
+            </select>
+
+            <h3>Descripción:</h3>
+            <ul>
+                <li>100% Premium Cotton</li>
+                <li>5.3 oz. 100% preshrunk cotton</li>
+                <li>Sport Grey 90% Cotton, 10% Polyester</li>
+                <li>Heather 50% Cotton, 50% Polyester</li>
+                <li>Seamless double needle collar</li>
+                <li>Taped neck and shoulders for durability</li>
+                <li>Double needle sleeve and bottom hem</li>
+                <li>Tubular fit for minimal torque</li>
+                <li>Imported</li>
+            </ul>
+
+            <button class="btn-cotizar">Solicitar Cotización</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-col">© 2025 Ola Creaciones</div>
+        <div class="footer-col"><a href="../../../politicas.html">Políticas</a></div>
+        <div class="footer-col">
+            <a href="https://facebook.com/Olacreacionestx">Facebook</a> |
+            <a href="https://instagram.com/olacreacionestx">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>
