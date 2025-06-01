@@ -1,48 +1,100 @@
-<main>
 
-  <h1>Nuestras Categorías</h1>
-  <div class="categorias-grid">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Ola Creaciones</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
 
-    <div class="categoria-card">
-        <div class="icono">👕</div>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo"><img src="assets/logo.png" alt="Logo Ola Creaciones"></div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="productos.html">Productos</a>
+          <ul class="submenu">
+            <li><a href="productos_categorias/ropa-personalizada.html">Ropa Personalizada</a></li>
+            <li><a href="productos_categorias/articulos-promocionales.html">Artículos Promocionales</a></li>
+            <li><a href="productos_categorias/papeleria-publicidad.html">Papelería y Publicidad</a></li>
+            <li><a href="productos_categorias/regalos-eventos.html">Regalos y Eventos</a></li>
+            <li><a href="productos_categorias/empaque-personalizado.html">Empaque Personalizado</a></li>
+          </ul>
+        </li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="como-funciona.html">Cómo Funciona</a></li>
+        <li><a href="usps.html">Cotiza Envío</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Nuestras Categorías</h1>
+      <p>Explora todos nuestros productos personalizados y encuentra lo ideal para tu evento o negocio.</p>
+    </section>
+
+    <section class="categorias-grid">
+      <div class="categoria-tarjeta">
+        <img src="assets/icons/ropa.png" alt="Ropa Personalizada">
         <h2>Ropa Personalizada</h2>
-        <p>Productos ideales para identificar tu marca o equipo.</p>
-        <a href="productos_categoria/ropa_personalizada/index.html" class="btn">Ver productos</a>
-    </div>
-    
+        <p>Playeras, sudaderas, gorras y más con tu logo o diseño único.</p>
+        <a href="productos_categorias/ropa-personalizada.html" class="boton">Ver productos</a>
+      </div>
 
-    <div class="categoria-card">
-        <div class="icono">🎁</div>
+      <div class="categoria-tarjeta">
+        <img src="assets/icons/promocionales.png" alt="Artículos Promocionales">
         <h2>Artículos Promocionales</h2>
-        <p>Termos, tazas, llaveros y más para tu evento o empresa.</p>
-        <a href="productos_categoria/articulos_promocionales/index.html" class="btn">Ver productos</a>
-    </div>
-    
+        <p>Termos, tazas, llaveros y regalos ideales para promocionar tu marca.</p>
+        <a href="productos_categorias/articulos-promocionales.html" class="boton">Ver productos</a>
+      </div>
 
-    <div class="categoria-card">
-        <div class="icono">🖨️</div>
+      <div class="categoria-tarjeta">
+        <img src="assets/icons/papeleria.png" alt="Papelería y Publicidad">
         <h2>Papelería y Publicidad</h2>
-        <p>Stickers, tarjetas y volantes con tu identidad visual.</p>
-        <a href="productos_categoria/papeleria_y_publicidad/index.html" class="btn">Ver productos</a>
-    </div>
-    
+        <p>Stickers, volantes, tarjetas y etiquetas para tu imagen profesional.</p>
+        <a href="productos_categorias/papeleria-publicidad.html" class="boton">Ver productos</a>
+      </div>
 
-    <div class="categoria-card">
-        <div class="icono">🎉</div>
+      <div class="categoria-tarjeta">
+        <img src="assets/icons/regalos.png" alt="Regalos y Eventos">
         <h2>Regalos y Eventos</h2>
-        <p>Recuerdos únicos para celebraciones especiales.</p>
-        <a href="productos_categoria/regalos_y_eventos/index.html" class="btn">Ver productos</a>
-    </div>
-    
+        <p>Camisetas para cumpleaños, cojines, marcos y más.</p>
+        <a href="productos_categorias/regalos-eventos.html" class="boton">Ver productos</a>
+      </div>
 
-    <div class="categoria-card">
-        <div class="icono">📦</div>
+      <div class="categoria-tarjeta">
+        <img src="assets/icons/empaque.png" alt="Empaque Personalizado">
         <h2>Empaque Personalizado</h2>
-        <p>Cajas, bolsas y cintas que elevan tu presentación.</p>
-        <a href="productos_categoria/empaque_personalizado/index.html" class="btn">Ver productos</a>
+        <p>Cajas, bolsas y cintas con tu imagen de marca para una presentación perfecta.</p>
+        <a href="productos_categorias/empaque-personalizado.html" class="boton">Ver productos</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-col">
+      <h4>Ola Creaciones</h4>
+      <p>Productos personalizados con propósito</p>
     </div>
-    
-  </div>
-</main>
+    <div class="footer-col">
+      <h4>Políticas</h4>
+      <ul>
+        <li><a href="politicas.html">Términos y Condiciones</a></li>
+        <li><a href="politicas.html">Política de Privacidad</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Redes Sociales</h4>
+      <p>@olacreacionestx</p>
+    </div>
+  </footer>
+
 </body>
 </html>
