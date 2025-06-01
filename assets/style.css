@@ -1,0 +1,152 @@
+
+/* === Estilos Globales === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Encabezado === */
+header {
+  background-color: #004b8d;
+  padding: 20px 0;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #0066c2;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+nav ul ul li {
+  width: 150px;
+}
+
+/* === Contenedor principal === */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* === Tarjetas de categorías === */
+.categoria {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.categoria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.categoria img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+.categoria h2 {
+  font-size: 22px;
+  color: #004b8d;
+  margin-bottom: 10px;
+}
+
+.categoria p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* === Botones === */
+.btn {
+  display: inline-block;
+  background-color: #004b8d;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #0066c2;
+}
+
+/* === Pie de Página === */
+footer {
+  background-color: #004b8d;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .categoria {
+    padding: 15px;
+  }
+}
