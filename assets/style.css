@@ -1,74 +1,68 @@
 
-/* Estilos generales */
+/* Fuente base moderna y profesional */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fefefe;
-    color: #333;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
 
-
-/* Encabezado profesional con fondo azul */
-header {
-    background-color: #0052cc;
-    color: white;
-    padding: 12px 0;
+/* Títulos */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #0052cc;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
 }
 
-nav {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
+h1 {
+  font-size: 2.2rem;
 }
 
-nav img {
-    height: 45px;
+h2 {
+  font-size: 1.8rem;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+h3 {
+  font-size: 1.4rem;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+/* Párrafos y texto */
+p, li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1em;
 }
 
-nav ul li a:hover {
-    color: #aad4ff;
+/* Enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.btn {
-    background-color: #007bff;
-    padding: 10px 18px;
-    color: white;
-    border-radius: 20px;
-    font-size: 14px;
-    text-decoration: none;
-    margin-left: auto;
+a:hover {
+  text-decoration: underline;
 }
 
-
-footer {
-    background-color: #0052cc;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    margin-top: 40px;
+/* Botones CTA */
+.cta {
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
 }
 
-footer a {
-    color: #aad4ff;
-    text-decoration: none;
-    margin: 0 10px;
+/* Contenedores de contenido */
+.text-block {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
