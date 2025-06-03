@@ -1,112 +1,51 @@
+
 <!DOCTYPE html>
 
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
+<title>Cotiza Envío</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ola Creaciones - Página Base</title>
-<link href="assets/style.css" rel="stylesheet"/>
-<style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background-color: #004080; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
-    header img { height: 40px; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
-    nav ul li { position: relative; }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px;
-      display: block;
-    }
-    nav ul li:hover > ul {
-      display: block;
-    }
-    nav ul li ul {
-      display: none;
-      position: absolute;
-      background-color: #004080;
-      top: 100%;
-      left: 0;
-      padding: 0;
-      z-index: 1000;
-    }
-    nav ul li ul li {
-      width: 200px;
-    }
-    .btn-cotizar {
-      background-color: white;
-      color: #004080;
-      padding: 8px 16px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #004080;
-      color: white;
-      display: flex;
-      justify-content: space-around;
-      padding: 20px 10px;
-      flex-wrap: wrap;
-    }
-    footer div { width: 30%; min-width: 200px; }
-    footer h4 { margin-bottom: 10px; }
-    footer ul { list-style: none; padding: 0; }
-    footer ul li { margin-bottom: 5px; }
-    .iconos-sociales a {
-      color: white;
-      margin-right: 10px;
-      text-decoration: none;
-      font-size: 20px;
-    }
-  </style>
 </head>
 <body>
-<!-- ENCABEZADO -->
-<header>
-<!-- Logo -->
-<img alt="Logo Ola Creaciones" src="assets/logo.png"/>
-<!-- Menú de navegación -->
+<header style="background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc;">
+<img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="height: 80px;"/>
 <nav>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li>
-<a href="productos.html">Productos</a>
-<ul>
-<li><a href="categorias-ropa.html">Ropa Personalizada</a></li>
-<li><a href="categorias-eventos.html">Regalos y Eventos</a></li>
-</ul>
-</li>
-<li><a href="testimonios.html">Testimonios</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="como-funciona.html">Cómo Funciona</a></li>
-<li><a href="politicas.html">Políticas</a></li>
-<li><a class="btn-cotizar" href="https://wa.me/5210000000000" target="_blank">Cotizar</a></li>
-</ul>
+<a href="index.html" style="margin: 0 10px;">Inicio</a>
+<a href="productos.html" style="margin: 0 10px;">Productos</a>
+<a href="testimonios.html" style="margin: 0 10px;">Testimonios</a>
+<a href="faq.html" style="margin: 0 10px;">FAQ</a>
+<a href="como-funciona.html" style="margin: 0 10px;">Cómo Funciona</a>
+<a href="usps.html" style="margin: 0 10px;">Cotiza Envío</a>
 </nav>
+<a href="#contacto" style="background: #007bff; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold;">Cotiza Ahora</a>
 </header>
-<!-- CONTENIDO PRINCIPAL -->
-<main style="padding: 20px;">
+<main style="max-width: 900px; margin: 80px auto 20px; padding: 10px; font-family: sans-serif;">
+<section style="background-color: #0052cc; color: white; text-align: center; padding: 40px 20px; font-family: 'Montserrat', sans-serif;">
+<h1 style="margin: 0; font-size: 2rem;">Usps</h1>
+</section>
+<p style="font-size: 1rem; margin-top: 0; margin-bottom: 0.5em;">Contenido de ejemplo para la página Cotiza Envío.</p>
 </main>
-<!-- PIE DE PÁGINA -->
-<footer>
-<div>
-<h4>Ola Creaciones</h4>
-<p>Diseños con propósito, hechos a tu medida.</p>
+<footer style="background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px;">
+<div style="max-width: 1000px; margin: auto;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
+<div style="flex: 1; min-width: 200px; margin: 10px;">
+<strong>Ola Creaciones</strong>
+<p>Productos personalizados con calidad premium.</p>
 </div>
-<div>
-<h4>Políticas</h4>
-<ul>
-<li><a href="politicas.html">Términos de uso</a></li>
-<li><a href="politicas.html">Política de privacidad</a></li>
-</ul>
+<div style="flex: 1; min-width: 200px; margin: 10px;">
+<strong>Información Legal</strong>
+<p><a href="politicas.html#privacidad" style="color: #eee;">Política de Privacidad</a></p>
+<p><a href="politicas.html#terminos" style="color: #eee;">Términos y Condiciones</a></p>
+<p><a href="politicas.html#devoluciones" style="color: #eee;">Política de Devoluciones</a></p>
 </div>
-<div class="iconos-sociales">
-<h4>Síguenos</h4>
-<a href="#" title="Facebook">📘</a>
-<a href="#" title="Instagram">📸</a>
-<a href="#" title="TikTok">🎵</a>
+<div style="flex: 1; min-width: 200px; margin: 10px;">
+<strong>Redes Sociales</strong>
+<p><a href="https://www.facebook.com/Olacreacionestx" style="color: #eee;" target="_blank">Facebook</a></p>
+<p><a href="https://www.instagram.com/olacreacionestx" style="color: #eee;" target="_blank">Instagram</a></p>
+</div>
+</div>
+<p style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
 </div>
 </footer>
 </body>
