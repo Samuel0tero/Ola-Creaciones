@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ola Creaciones - Página Base</title>
+<link href="assets/style.css" rel="stylesheet"/>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #004080; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 40px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav ul li { position: relative; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li:hover > ul {
+      display: block;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #004080;
+      top: 100%;
+      left: 0;
+      padding: 0;
+      z-index: 1000;
+    }
+    nav ul li ul li {
+      width: 200px;
+    }
+    .btn-cotizar {
+      background-color: white;
+      color: #004080;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 10px;
+      flex-wrap: wrap;
+    }
+    footer div { width: 30%; min-width: 200px; }
+    footer h4 { margin-bottom: 10px; }
+    footer ul { list-style: none; padding: 0; }
+    footer ul li { margin-bottom: 5px; }
+    .iconos-sociales a {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<!-- ENCABEZADO -->
+<header>
+<!-- Logo -->
+<img alt="Logo Ola Creaciones" src="assets/logo.png"/>
+<!-- Menú de navegación -->
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li>
+<a href="productos.html">Productos</a>
+<ul>
+<li></li>
+<li></li>
+</ul>
+</li>
+<li></li>
+<li><a href="faq.html">FAQ</a></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</nav>
+</header>
+<!-- CONTENIDO PRINCIPAL -->
+<main style="padding: 20px;">
+<!-- Aquí va el contenido específico de cada página -->
+<h1 style="color: #004080;">Bienvenido a Ola Creaciones</h1>
+<p>Este es un ejemplo base. Puedes reemplazar este bloque con el contenido correspondiente a cada sección.</p>
+</main>
+<!-- PIE DE PÁGINA -->
+<footer>
+<div>
+<h4>Ola Creaciones</h4>
+<p>Diseños con propósito, hechos a tu medida.</p>
+</div>
+<div>
+<h4>Políticas</h4>
+<ul>
+<li></li>
+<li></li>
+</ul>
+</div>
+<div class="iconos-sociales">
+<h4>Síguenos</h4>
+
+
+
+</div>
+</footer>
+</body>
+</html>
