@@ -1,105 +1,123 @@
-
 <!DOCTYPE html>
 
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
-<title>Ola Creaciones - Productos Personalizados</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ola Creaciones - Página Base</title>
+<link href="assets/style.css" rel="stylesheet"/>
 <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
-    .hero { background: #0052cc; color: white; text-align: center; padding: 60px 20px; }
-    .hero h1 { margin-bottom: 10px; font-size: 2.5rem; }
-    .hero p { margin-top: 0; font-size: 1.2rem; }
-    .cta { background: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; margin-top: 20px; }
-    .section { max-width: 960px; margin: 40px auto; padding: 0 20px; }
-    .section h2 { color: #0052cc; }
-    .products-preview { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .product-card { background: #f5f5f5; border-radius: 8px; padding: 20px; width: 250px; text-align: center; }
-    .product-card img { width: 100%; max-height: 150px; object-fit: contain; margin-bottom: 10px; }
-    .footer { background: #0052cc; color: #fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #004080; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 40px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav ul li { position: relative; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li:hover > ul {
+      display: block;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #004080;
+      top: 100%;
+      left: 0;
+      padding: 0;
+      z-index: 1000;
+    }
+    nav ul li ul li {
+      width: 200px;
+    }
+    .btn-cotizar {
+      background-color: white;
+      color: #004080;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 10px;
+      flex-wrap: wrap;
+    }
+    footer div { width: 30%; min-width: 200px; }
+    footer h4 { margin-bottom: 10px; }
+    footer ul { list-style: none; padding: 0; }
+    footer ul li { margin-bottom: 5px; }
+    .iconos-sociales a {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 20px;
+    }
   </style>
-<link href="style.css" rel="stylesheet"/></head>
+</head>
 <body>
-<header style="background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc;">
-<img alt="Logo Ola Creaciones" src="Logo Ola Creaciones.png" style="height: 80px;"/>
+<!-- ENCABEZADO -->
+<header>
+<!-- Logo -->
+<img alt="Logo Ola Creaciones" src="assets/logo.png"/>
+<!-- Menú de navegación -->
 <nav>
-<a href="index.html" style="margin: 0 10px;">Inicio</a>
-<a href="productos.html" style="margin: 0 10px;">Productos</a>
-<a href="testimonios.html" style="margin: 0 10px;">Testimonios</a>
-<a href="faq.html" style="margin: 0 10px;">FAQ</a>
-<a href="como-funciona.html" style="margin: 0 10px;">Cómo Funciona</a>
-<a href="usps.html" style="margin: 0 10px;">Cotiza Envío</a>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li>
+<a href="productos.html">Productos</a>
+<ul>
+<li><a href="categorias-ropa.html">Ropa Personalizada</a></li>
+<li><a href="categorias-eventos.html">Regalos y Eventos</a></li>
+</ul>
+</li>
+<li><a href="testimonios.html">Testimonios</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="como-funciona.html">Cómo Funciona</a></li>
+<li><a href="politicas.html">Políticas</a></li>
+<li><a class="btn-cotizar" href="https://wa.me/5210000000000" target="_blank">Cotizar</a></li>
+</ul>
 </nav>
-<a class="cta" href="#contacto">Cotiza Ahora</a>
 </header>
-<section class="hero" style=" padding: 20px 20px;">
-<h1 class="text-block" style="margin-bottom: 10px; font-size: 2rem;">Productos Personalizados para Tu Negocio</h1>
-<p class="text-block">Alta calidad · Impresión profesional · Entrega rápida</p>
-</section>
-<section class="section">
-<h2 class="text-block">Algunos de Nuestros Productos</h2>
-<div class="products-preview"><div class="product-card"><img alt="Playera personalizada" src="playera.png"/><h3 class="text-block">📝 Playera Personalizada</h3><p class="text-block">🧾 Precios: $18.00  $16.00 $14.50 Mayoreo | Mayoreo: </p><p class="text-block">📏 Tallas: S a 3XL</p><p class="text-block">🎨 Colores: Blanco, Negro, Azul, Rojo</p></div><div class="product-card"><img alt="Sudadera personalizada" src="sudadera.png"/><h3 class="text-block">📝 Sudadera / Hoodie</h3><p class="text-block">🧾 Precios: $25.00  $22.00 $20.00 Mayoreo | Mayoreo: </p><p class="text-block">📏 Tallas: S a 2XL</p><p class="text-block">🎨 Colores: Gris, Negro, Azul Marino</p></div><div class="product-card"><img alt="Gorra personalizada" src="gorra.png"/><h3 class="text-block">📝 Gorra Personalizada</h3><p class="text-block">🧾 Precios: $12.00  $10.50 $9.00 Mayoreo | Mayoreo: </p><p class="text-block">📏 Tallas: Unitalla ajustable</p><p class="text-block">🎨 Colores: Negro, Blanco, Rojo</p></div></div>
-<p class="text-block" style="text-align:center; margin-top: 20px;"><a class="cta" href="productos.html">Ver Todos los Productos</a></p>
-</section>
-<section class="section">
-<h2 class="text-block">Lo Que Dicen Nuestros Clientes</h2>
-<blockquote style="text-align:center; font-style: italic; color: #333;">
-    “Las camisetas personalizadas quedaron increíbles. Excelente atención y calidad.”<br/>
-    – Cliente satisfecho
-  </blockquote>
-<p class="text-block" style="text-align:center;"><a class="cta" href="testimonios.html">Ver Todos los Testimonios</a></p>
-</section>
-<main><section class="section"><h2>Explora Nuestras Categorías</h2>
+<!-- CONTENIDO PRINCIPAL -->
+<main style="padding: 20px;"><section class="section"><h2>Explora Nuestras Categorías</h2>
 <div class="products-grid">
 <div class="product product"><img alt="" src="img/productos/playera-cuello-redondo.png"/><h3>Ropa Personalizada</h3></div>
 <div class="product product"><img alt="" src="img/productos/tazas-y-vasos.png"/><h3>Artículos Promocionales</h3></div>
 <div class="product product"><img alt="" src="img/productos/stickers.png"/><h3>Papelería y Publicidad</h3></div>
 </div>
-</section><section class="section"><h2>Productos Destacados</h2>
-<div class="products-grid">
-<div class="product product"><img alt="" src="img/productos/playera-tipo-polo.png"/><h3>Playera Tipo Polo</h3><a class="cta" href="productos.html">Ver más</a></div>
-<div class="product product"><img alt="" src="img/productos/llaveros.png"/><h3>Llaveros</h3><a class="cta" href="productos.html">Ver más</a></div>
-<div class="product product"><img alt="" src="img/productos/marcos-personalizados.png"/><h3>Marcos Personalizados</h3><a class="cta" href="productos.html">Ver más</a></div>
-</div>
 </section><section class="section"><h2>Lo que Dicen Nuestros Clientes</h2>
 <blockquote>“El mejor servicio personalizado que he tenido. ¡100% recomendado!” – Ana G.</blockquote>
 <blockquote>“Productos de excelente calidad y atención súper rápida.” – Carlos M.</blockquote>
-</section><section class="section"><h2>¿Cómo Funciona?</h2>
-<ol>
-<li>Elige el producto que deseas personalizar.</li>
-<li>Contáctanos con tu diseño o idea.</li>
-<li>Recibe tu pedido en casa o negocio.</li>
-</ol>
 </section>
-<div style="text-align: center; margin-top: 3rem;">
-<h2>¿Listo para personalizar?</h2>
-<p>Contáctanos hoy mismo y lleva tu marca al siguiente nivel.</p>
-<a class="cta" href="https://wa.me/19728496989" target="_blank">¡Habla con nosotros ahora!</a>
+
+</main>
+<!-- PIE DE PÁGINA -->
+<footer>
+<div>
+<h4>Ola Creaciones</h4>
+<p>Diseños con propósito, hechos a tu medida.</p>
 </div>
-</main><footer style="background:#0052cc; color:#fff; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-top: 40px;">
-<div style="max-width: 1200px; margin: auto;">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; text-align: left;">
-<div style="flex: 1; min-width: 300px; margin: 10px;">
-<strong>Ola Creaciones</strong>
-<p class="text-block">Productos personalizados con calidad premium.</p>
+<div>
+<h4>Políticas</h4>
+<ul>
+<li><a href="politicas.html">Términos de uso</a></li>
+<li><a href="politicas.html">Política de privacidad</a></li>
+</ul>
 </div>
-<div style="flex: 1; min-width: 300px; margin: 10px;">
-<strong>Información Legal</strong>
-<p class="text-block"><a href="politicas.html#privacidad" style="color: #eee;">Política de Privacidad</a></p>
-<p class="text-block"><a href="politicas.html#terminos" style="color: #eee;">Términos y Condiciones</a></p>
-<p class="text-block"><a href="politicas.html#devoluciones" style="color: #eee;">Política de Devoluciones</a></p>
-</div>
-<div style="flex: 1; min-width: 300px; margin: 10px;">
-<strong>Redes Sociales</strong>
-<p class="text-block"><a href="https://www.facebook.com/Olacreacionestx" style="color: #eee;" target="_blank">Facebook</a></p>
-<p class="text-block"><a href="https://www.instagram.com/olacreacionestx" style="color: #eee;" target="_blank">Instagram</a></p>
-</div>
-</div>
-<p class="text-block" style="margin-top: 20px;">© 2025 Ola Creaciones - Todos los derechos reservados</p>
+<div class="iconos-sociales">
+<h4>Síguenos</h4>
+<a href="#" title="Facebook">📘</a>
+<a href="#" title="Instagram">📸</a>
+<a href="#" title="TikTok">🎵</a>
 </div>
 </footer>
-<a href="#contacto" style="position: fixed; bottom: 80px; right: 20px; background: #007bff; color: white; padding: 12px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); z-index: 1000;">Cotiza Ahora</a>
-<a href="https://wa.me/19726249914" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 12px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); z-index: 1000;" target="_blank">WhatsApp</a>
 </body>
 </html>
