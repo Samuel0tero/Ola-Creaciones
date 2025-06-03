@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ola Creaciones - Página Base</title>
+<link href="assets/style.css" rel="stylesheet"/>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #004080; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 40px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav ul li { position: relative; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li:hover > ul {
+      display: block;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #004080;
+      top: 100%;
+      left: 0;
+      padding: 0;
+      z-index: 1000;
+    }
+    nav ul li ul li {
+      width: 200px;
+    }
+    .btn-cotizar {
+      background-color: white;
+      color: #004080;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 10px;
+      flex-wrap: wrap;
+    }
+    footer div { width: 30%; min-width: 200px; }
+    footer h4 { margin-bottom: 10px; }
+    footer ul { list-style: none; padding: 0; }
+    footer ul li { margin-bottom: 5px; }
+    .iconos-sociales a {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<!-- ENCABEZADO -->
+<header>
+<!-- Logo -->
+<img alt="Logo Ola Creaciones" src="assets/logo.png"/>
+<!-- Menú de navegación -->
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li>
+<a href="productos.html">Productos</a>
+<ul>
+<li><a href="categorias-ropa.html">Ropa Personalizada</a></li>
+<li><a href="categorias-eventos.html">Regalos y Eventos</a></li>
+</ul>
+</li>
+<li><a href="testimonios.html">Testimonios</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="como-funciona.html">Cómo Funciona</a></li>
+<li><a href="politicas.html">Políticas</a></li>
+<li><a class="btn-cotizar" href="https://wa.me/5210000000000" target="_blank">Cotizar</a></li>
+</ul>
+</nav>
+</header>
+<!-- CONTENIDO PRINCIPAL -->
+<main style="padding: 20px;">
+<section class="section">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+<div style="flex: 1 1 300px;">
+<img alt="Playera Manga Corta" src="img/productos/playera-manga-corta.png" style="width: 100%; max-width: 400px;"/>
+</div>
+<div style="flex: 2 1 400px;">
+<h2>Playera Manga Corta</h2>
+<p><strong>Colores Disponibles:</strong></p>
+<div id="colores" style="margin-bottom: 10px;">
+<button onclick="seleccionar('color', 'Blanco')">Blanco</button>
+<button onclick="seleccionar('color', 'Negro')">Negro</button>
+<button onclick="seleccionar('color', 'Rojo')">Rojo</button>
+</div>
+<p><strong>Tallas Disponibles:</strong></p>
+<div id="tallas" style="margin-bottom: 10px;">
+<button onclick="seleccionar('talla', 'S')">S</button>
+<button onclick="seleccionar('talla', 'M')">M</button>
+<button onclick="seleccionar('talla', 'L')">L</button>
+<button onclick="seleccionar('talla', 'XL')">XL</button>
+</div>
+<p><strong>Técnicas de Personalización:</strong></p>
+<div id="tecnicas" style="margin-bottom: 10px;">
+<button onclick="seleccionar('tecnica', 'Vinil')">Vinil</button>
+<button onclick="seleccionar('tecnica', 'Sublimado')">Sublimado</button>
+<button onclick="seleccionar('tecnica', 'Serigrafía')">Serigrafía</button>
+</div>
+<p id="precioEstimado"><strong>Precio estimado:</strong> Selecciona opciones</p>
+<a class="cta" href="https://wa.me/19728496989" target="_blank">Solicitar Cotización</a>
+<a class="cta" href="productos.html">← Volver a productos</a>
+</div>
+</div>
+</section>
+<script>
+  let seleccion = { color: null, talla: null, tecnica: null };
+
+  function seleccionar(tipo, valor) {
+    seleccion[tipo] = valor;
+    calcularPrecio();
+  }
+
+  function calcularPrecio() {
+    const { color, talla, tecnica } = seleccion;
+    if (color && talla && tecnica) {
+      let base = 90;
+      if (tecnica === 'Sublimado') base += 20;
+      else if (tecnica === 'Serigrafía') base += 30;
+      document.getElementById('precioEstimado').innerText = 'Precio estimado: $' + base.toFixed(2) + ' MXN';
+    }
+  }
+</script>
+</main>
+<!-- PIE DE PÁGINA -->
+<footer>
+<div>
+<h4>Ola Creaciones</h4>
+<p>Diseños con propósito, hechos a tu medida.</p>
+</div>
+<div>
+<h4>Políticas</h4>
+<ul>
+<li><a href="politicas.html">Términos de uso</a></li>
+<li><a href="politicas.html">Política de privacidad</a></li>
+</ul>
+</div>
+<div class="iconos-sociales">
+<h4>Síguenos</h4>
+<a href="#" title="Facebook">📘</a>
+<a href="#" title="Instagram">📸</a>
+<a href="#" title="TikTok">🎵</a>
+</div>
+</footer>
+</body>
+</html>
